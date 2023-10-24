@@ -37,7 +37,7 @@ function SigninForm() {
     <div className={styles.container}>
       <div className={styles.signinForm}>
         <Logo />
-        <h1 className="govuk-heading-l">Medical certificate of cause of death</h1>
+        <h1 className="govuk-heading-l">Adult Social Care Training Fund Reimbursement Service - Alpha Showcase</h1>
         <form className={styles.passwordForm} onSubmit={(e) => handleSubmit(e)}>
           <input
             className="govuk-input"
@@ -49,7 +49,7 @@ function SigninForm() {
             type="password"
             name="login"
           />
-          <input className="govuk-button" type="submit" value="Password" />
+          <input className="govuk-button" type="submit" value="Submit" />
         </form>
         {error && <p className="govuk-body govuk-error-message">{error}</p>}
       </div>

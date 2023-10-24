@@ -1,14 +1,14 @@
 import { ITheme } from '@/types';
 
 export const theme: ITheme = {
-  pageTitlePostfix: 'Hippo Digital',
-  name: 'Medical certificate of cause of death',
+  pageTitlePostfix: 'Hippo',
+  name: 'Adult Social Care - Training Fund Reimbursement Service',
   serviceName: '',
   logo: {
-    src: '/theme/images/hippo-data-logo.webp',
-    height: 70,
-    width: 282,
-    alt: 'NHSBSA.',
+    src: '/theme/images/care-logo.svg',
+    height: 35,
+    width: 114,
+    alt: 'Hippo',
   },
   tagsColours: {
     blue: [],
@@ -22,7 +22,7 @@ export const theme: ITheme = {
     yellow: ['Medium priority'],
   },
   headerMenu: [
-    {
+    /*{
       content: 'Home',
       title: 'Home',
       link: '/',
@@ -31,18 +31,18 @@ export const theme: ITheme = {
       content: 'Features',
       title: 'All features of this project',
       link: '/features',
-    },
+    },*/
   ],
   footerMenu: [
     {
-      content: 'Kitchen sink',
-      link: '/kitchen-sink',
-      title: 'Get help creating content',
+      content: 'Glossary',
+      link: '/glossary',
+      title: 'View a glossary of agreed terms for this work',
     },
     {
-      content: 'Documentation',
-      link: '/documentation',
-      title: 'Search the document archives',
+      content: 'The Team',
+      link: '/team',
+      title: 'Meet the multi-disciplinary team that worked on the alpha',
     },
   ],
 };

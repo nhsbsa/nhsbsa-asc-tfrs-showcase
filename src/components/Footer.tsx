@@ -83,8 +83,8 @@ function Footer({ data }: Props) {
               </g>
             </svg>
             <span style={{ marginTop: '15px' }} className="govuk-footer__licence-description govuk-!-width-full">
-              Provided with ❤️ by&nbsp;
-              <Link data-testid="copyright" target="_blank" className="govuk-footer__link" href="https://hippodigital.co.uk/" rel="license">Hippo & Hippo Data</Link>
+              Showcase teamplate provided by&nbsp;
+              <Link data-testid="copyright" target="_blank" className="govuk-footer__link" href="https://hippodigital.co.uk/" rel="license">Hippo</Link>
             </span>
           </div>
         </div>
