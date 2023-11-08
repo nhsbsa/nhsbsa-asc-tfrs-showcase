@@ -16,6 +16,15 @@
   },
   {
     "slug": [
+      "approach"
+    ],
+    "url": "/approach",
+    "file": "public/content/approach/index.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
       "data-test"
     ],
     "url": "/data-test",
@@ -182,15 +191,6 @@
     ],
     "url": "/problem",
     "file": "public/content/problem/index.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
-    "description": "The home page description"
-  },
-  {
-    "slug": [
-      "response"
-    ],
-    "url": "/response",
-    "file": "public/content/response/index.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
   },

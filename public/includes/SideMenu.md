@@ -1,6 +1,6 @@
 ### Background
 1. [The problem](/problem)
-2. [Our response](/response/)
+2. [Our approach](/approach/)
 ### Research & design
 1. [Section 1](/section)
 2. [Section 2](/section)
