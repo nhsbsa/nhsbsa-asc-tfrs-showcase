@@ -23,6 +23,7 @@ import WarningCallout from '@/components/WarningCallout';
 import LeadParagraph from '@/components/LeadParagraph';
 import ReadData from '@/components/Data';
 import { MDXComponents } from 'mdx/types';
+import ZoomImage from '@/components//ZoomImage';
 import Image from './Image';
 
 interface MDXProps {
@@ -130,4 +131,5 @@ export const MdxComponents = {
   Video,
   BackLink,
   WarningCallout,
+  ZoomImage,
 } as MDXComponents;

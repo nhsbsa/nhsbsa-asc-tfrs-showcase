@@ -6,7 +6,7 @@
     "build": "next build",
     "build:static": "yarn clean && next build",
     "clean": "rm -rf .next build",
-    "dev": "next dev",
+    "dev": "next dev -p 3001",
     "lint": "next lint",
     "lint:md": "eslint public/**/*.mdx",
     "prepare": "husky install",
@@ -32,6 +32,8 @@
     "next-mdx-remote": "^4.4.1",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-modal-image": "^2.6.0",
+    "remark-unwrap-images": "^4.0.0",
     "sass": "^1.66.1",
     "typescript": "^5.2.2"
   },
