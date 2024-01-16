@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 type Props = {
   name?: ITheme['name']
-  logo?: ITheme['logo'];
+  logo?: ITheme['logo']
   serviceName?: string
   children?: React.ReactNode
 }
@@ -20,21 +20,25 @@ function Header({
   return (
     <header className="govuk-header " role="banner" data-module="govuk-header">
       <div className="govuk-header__container govuk-width-container">
-        <div className="govuk-header__logo app-header__logo">
-          <Link data-testid="home-link" href="/" className="govuk-header__link govuk-header__link--homepage">
-            <span className="govuk-header__logotype">
-              {logo.src && <Image className="govuk-header__logotype" width={logo.width} height={logo.height} src={logo.src} alt={logo.alt} />}
-              {!logo.src && name && <span style={{ padding: '20px 0px' }} className="govuk-header__logotype-text">{name}</span>}
-            </span>
-          </Link>
-        </div>
-        <div className="govuk-header__content">
-          {serviceName && (
-          <div className="govuk-header__service-name">
-            {serviceName}
+        <div className="govuk-grid-column-one-third">
+          <div className="govuk-header__logo app-header__logo">
+            <Link data-testid="home-link" href="/" className="govuk-header__link govuk-header__link--homepage">
+              <span className="govuk-header__logotype">
+                {logo.src && <Image className="govuk-header__logotype" width={logo.width} height={logo.height} src={logo.src} alt={logo.alt} />}
+                {!logo.src && name && <span style={{ padding: '20px 0px' }} className="govuk-header__logotype-text">{name}</span>}
+              </span>
+            </Link>
           </div>
-          )}
-          {children}
+        </div>
+        <div className="govuk-grid-column-two-thirds">
+          <div className="govuk-header__content">
+            {serviceName && (
+            <div className="govuk-header__service-name">
+              {serviceName}
+            </div>
+            )}
+            {children}
+          </div>
         </div>
       </div>
     </header>

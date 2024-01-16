@@ -166,6 +166,10 @@ li::marker {
 
 /* SITEWIDE COMPONENTS */
 
+.govuk-header__logo {
+  width: unset !important;
+}
+
 div.page-intro {
   margin-bottom: 50px;
   border-bottom: 1px solid #ececec;

@@ -13,6 +13,7 @@ export default async function SlugLayout({ children }: {
   const {
     serviceName, headerMenu, footerMenu, logo, name,
   }: ITheme = theme;
+
   return (
     <>
       <SkipLink text="Skip to main content" toId="mainContent" />
