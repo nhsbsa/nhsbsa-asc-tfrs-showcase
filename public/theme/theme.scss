@@ -61,11 +61,11 @@ $govuk-tag-blue: #144e81;
 $govuk-tag-blue-bg: #d2e2f1;
 // $govuk-tag-grey: #505a5f;
 
-/* MCCD COLOURS */
-$mccd-lightest-grey: #ececec;
-$mccd-light-grey: #cccccc;
-$mccd-mid-grey: #999999;
-$mccd-light-green: #e1ecc1;
+/* OTHER THEME COLOURS */
+$theme-lightest-grey: #ececec;
+$theme-light-grey: #cccccc;
+$theme-mid-grey: #999999;
+$theme-light-green: #e1ecc1;
 
 /* FONTAWESOME */
 .far, .fas {
@@ -122,6 +122,15 @@ html {
 h2.govuk-heading-l { margin-top: 50px; }
 h3.govuk-heading-m { margin-top: 30px; }
 h4.govuk-heading-s { margin-top: 30px; }
+
+span.govuk-caption-l {
+  em {
+    display: inline-block;
+    margin-right: 10px;
+    color: $govuk-brand-colour;
+    font-style: normal;
+  }
+}
 
 .govuk-header__link, .govuk-header__link--homepage {
   &:hover {
@@ -195,9 +204,9 @@ a.signpost {
   display: block;
   position: relative;
   margin-bottom: 20px;
-  border-left: 10px solid $mccd-light-grey;
+  border-left: 10px solid $theme-light-grey;
   padding: 1rem;
-  background-color: $mccd-lightest-grey;
+  background-color: $theme-lightest-grey;
   text-decoration: none;
 
   &::after {
@@ -237,7 +246,7 @@ a.signpost {
   }
   
   &:focus {
-    background-color: $mccd-lightest-grey;
+    background-color: $theme-lightest-grey;
     box-shadow: none;
   }
   
@@ -246,7 +255,7 @@ a.signpost {
 a.next-page {
   display: block;
   position: relative;
-  border-left: 10px solid $mccd-lightest-grey;
+  border-left: 10px solid $theme-lightest-grey;
   padding: 1rem;
   padding-right: 50px;
   background-color: #f2f4ec;
@@ -280,7 +289,7 @@ a.next-page {
   
   &:hover {
     border-color: $govuk-success-colour;
-    background-color: $mccd-light-green;
+    background-color: $theme-light-green;
     
     p {
       color: $govuk-success-colour;
@@ -292,7 +301,7 @@ a.next-page {
   }
 
   &:focus {
-    background-color: $mccd-lightest-grey;
+    background-color: $theme-lightest-grey;
     box-shadow: none;
   }
 
@@ -302,7 +311,7 @@ a.previous-page {
   @extend .next-page;
 
   border-left: none;
-  border-right: 10px solid $mccd-lightest-grey;
+  border-right: 10px solid $theme-lightest-grey;
   padding: 1rem;
   padding-left: 50px;
   text-align: right;
@@ -320,13 +329,13 @@ a.previous-page {
 span.hint-enlarge {
   display: block;
   margin-bottom: 20px;
-  color: $mccd-mid-grey;
+  color: $theme-mid-grey;
   font-family: $govuk-font-family;
   font-size: 1.0rem;
   text-align: center;
   i {
     margin-right: 5px;
-    color: $mccd-mid-grey;
+    color: $theme-mid-grey;
   }
 }
 
@@ -379,9 +388,9 @@ div.person-profile {
 ul.sortable-cards {
   li {
     display: block;
-    border: 1px solid $mccd-light-grey;
+    border: 1px solid $theme-light-grey;
     padding: 10px;
-    box-shadow: $mccd-lightest-grey 2px 2px 2px;
+    box-shadow: $theme-lightest-grey 2px 2px 2px;
     font-size: 1rem;
 
     .tags {
@@ -397,14 +406,14 @@ ul.sortable-cards {
         }
         
         &.sizing {
-          background-color: $mccd-lightest-grey;
-          color: $mccd-mid-grey;
+          background-color: $theme-lightest-grey;
+          color: $theme-mid-grey;
         }
       }
     }
 
     &[data-priority="next"] {
-      background-color: $mccd-lightest-grey;
+      background-color: $theme-lightest-grey;
 
       .tags {
         .govuk-tag {
@@ -417,7 +426,7 @@ ul.sortable-cards {
     }
 
     &[data-priority="later"] {
-      background-color: $mccd-light-grey;
+      background-color: $theme-light-grey;
 
       .tags {
         .govuk-tag {
