@@ -2,8 +2,8 @@ import { ITheme } from '@/types';
 
 export const testTheme: ITheme = {
   pageTitlePostfix: 'Hippo Digital',
-  name: 'Medical certificate of cause of death',
-  serviceName: '',
+  name: 'Name',
+  serviceName: 'Service name',
   logo: {
     src: '/theme/images/hippo-data-logo.webp',
     height: 70,

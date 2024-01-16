@@ -3,7 +3,8 @@
 import { signIn } from 'next-auth/react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import React, { FormEventHandler, useState } from 'react';
-import Logo from '@/components/Logo';
+import { ITheme } from '@/types';
+import LogoBSA from './LogoBSA';
 import styles from './signin.module.scss';
 
 type ResType = {
@@ -12,7 +13,14 @@ type ResType = {
   ok: boolean
   url: string | null
 }
-function SigninForm() {
+type Props = {
+  name?: ITheme['name']
+  serviceName?: ITheme['serviceName']
+}
+function SigninForm({
+  name = '',
+  serviceName = '',
+}:Props) {
   const searchParams = useSearchParams();
   const router = useRouter();
   const [passwordInput, setPasswordInput] = useState({ password: '' });
@@ -36,8 +44,9 @@ function SigninForm() {
   return (
     <div className={styles.container}>
       <div className={styles.signinForm}>
-        <Logo />
-        <h1 className="govuk-heading-l">Medical certificate of cause of death</h1>
+        <LogoBSA />
+        <h1 className="govuk-heading-l">{name}</h1>
+        <h2 className="govuk-heading-m">{serviceName}</h2>
         <form className={styles.passwordForm} onSubmit={(e) => handleSubmit(e)}>
           <input
             className="govuk-input"

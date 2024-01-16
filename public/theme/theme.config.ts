@@ -3,7 +3,7 @@ import { ITheme } from '@/types';
 export const theme: ITheme = {
   pageTitlePostfix: 'Hippo',
   name: 'Adult Social Care',
-  serviceName: '',
+  serviceName: 'Training Fund Reimbursement Service',
   logo: {
     src: '/theme/images/logo.svg',
     height: 48,
