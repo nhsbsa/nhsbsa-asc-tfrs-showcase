@@ -1,0 +1,103 @@
+---
+title: NHS BSA Project | Hippo Digital
+description: The home page description
+---
+
+<Heading caption='Looking ahead to beta' tag='h1'>Beta planning</Heading>
+
+<GridRow>
+    <GridColumn width={'2/3'}>
+        <LeadParagraph>
+            We aim to take a pragmatic approach to beta and ensure we build what we are confident is proven, whilst continuing to investigate and test iteratively. We will add function and features that will help us continue to meet service outcomes and product objectives.
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+        <nav className="in-page-nav">
+            #### On this page
+            * [Summary of approach](#summary-of-approach)
+            * [Principles of private beta](#principles-of-private-beta)
+            * [Beta backlog](#beta-backlog)
+        </nav>
+    </GridColumn>
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Summary of approach
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        The team have been organically working towards Beta by validating and investigating technical options as we've progressed sprint by sprint.
+
+        In sprint 5 we met in person, for a 3 day beta planning workshop. We managed to MoSCoW features within the service map to understand what features and functionality were 'must haves' (based on value - meeting user needs and outcomes versus effort).
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Principles of private beta
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+
+        * consider continuation of service and how the product fits into the overall rollout timescale
+        * align as closely as possible with policy roll out and communication
+        * staggered approach to understand impact before wider roll out begins
+        * start roll out to users with the chosen authentication already embedded within their working practices (one less technology to learn)
+        * start with a small number of attending practitioners and wider number of medical examiners to minimise clinical risk impact
+
+        <ZoomImage alt="Proposed beta plan" small={'/artefacts/images/beta-plan-v2.png'} medium={'/artefacts/images/beta-plan-v2.png'} />
+        
+        This a complex project with the two biggest challenges to roll out being:
+
+        * onboarding (authorisation) and authentication that covers all GMC registered practitioners in England and Wales
+        * providing a bilingual product for Welsh healthcare professionals
+
+        We suggest testing the private beta with a small number of users who already have CIS2 as their authentication system.  When we have a minimum viable product for non-CIS2 users we will roll out to a percentage of those users for testing (including Welsh for bilingual testing) before a full roll out in public beta.
+
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Beta backlog
+    </GridColumn>
+    
+    <GridColumn width={'3/4'}>
+        At a high-level, we have assessed the beta backlog by expected priority and sizing:
+    </GridColumn>
+
+    <GridColumn width={'full'}>
+        <ReadData apiEndpoint={'/api/data/beta-backlog'}>
+            <SortableLists dataFilter={"slug:beta-backlog"} sortBy={{
+                'priority': ['now', 'next', 'later'], 'sizing': ['small', 'medium', 'large', 'unknown']
+            }} className="sortable-cards" />
+        </ReadData>
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+    <GridColumn width={'full'}>
+        ---
+    </GridColumn>
+</GridRow>
+<GridRow>
+    <GridColumn width={'1/2'}>
+        <a className="previous-page" href="/beta/to-be">
+            #### Looking ahead to beta
+            Projecting the 'to be'
+        </a>
+    </GridColumn>
+    <GridColumn width={'1/2'}>
+        <a className="next-page" href="/beta/service-performance">
+            #### Looking ahead to beta
+            Service performance
+        </a>
+    </GridColumn>
+</GridRow>
