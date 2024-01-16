@@ -14,11 +14,11 @@ type ResType = {
   url: string | null
 }
 type Props = {
-  name?: ITheme['name']
+  departmentName?: ITheme['departmentName']
   serviceName?: ITheme['serviceName']
 }
 function SigninForm({
-  name = '',
+  departmentName = '',
   serviceName = '',
 }:Props) {
   const searchParams = useSearchParams();
@@ -45,7 +45,7 @@ function SigninForm({
     <div className={styles.container}>
       <div className={styles.signinForm}>
         <LogoBSA />
-        <h1 className="govuk-heading-l">{name}</h1>
+        <h1 className="govuk-heading-l">{departmentName}</h1>
         <h2 className="govuk-heading-m">{serviceName}</h2>
         <form className={styles.passwordForm} onSubmit={(e) => handleSubmit(e)}>
           <input

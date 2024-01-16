@@ -5,12 +5,12 @@ import { theme } from '../../../../../public/theme/theme.config';
 
 function SignInPage() {
   const {
-    serviceName, name,
+    departmentName, serviceName,
   }: ITheme = theme;
 
   return (
     <Suspense fallback={<p className="govuk-body-s">Loading...</p>}>
-      <SigninForm serviceName={serviceName} name={name} />
+      <SigninForm departmentName={departmentName} serviceName={serviceName} />
     </Suspense>
   );
 }
