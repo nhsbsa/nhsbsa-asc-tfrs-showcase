@@ -6,11 +6,15 @@ import Image from 'next/image';
 type Props = {
   name?: ITheme['name']
   logo?: ITheme['logo']
-  serviceName?: string
+  // eslint-disable-next-line react/no-unused-prop-types
+  orgName?: ITheme['orgName']
+  departmentName?: ITheme['departmentName']
+  serviceName?: ITheme['serviceName']
   children?: React.ReactNode
 }
 function Header({
   name = '',
+  departmentName = '',
   serviceName = '',
   children,
   logo = {
@@ -32,11 +36,15 @@ function Header({
         </div>
         <div className="govuk-grid-column-two-thirds">
           <div className="govuk-header__content">
-            {serviceName && (
-            <div className="govuk-header__service-name">
-              {serviceName}
+            <div className="site-meta">
+              <div>
+                {name && <span className="name">{name}</span>}
+                {departmentName && <span className="department-name">{departmentName}</span>}
+              </div>
+              <div>
+                {serviceName && <span className="service-name">{serviceName}</span>}
+              </div>
             </div>
-            )}
             {children}
           </div>
         </div>

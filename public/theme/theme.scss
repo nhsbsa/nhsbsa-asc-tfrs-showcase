@@ -143,6 +143,24 @@ span.govuk-caption-l {
   }
 }
 
+.govuk-header__content {
+  width: 100%;
+  line-height: 1.5rem;
+  .site-meta {
+    font-size: 14px;
+    text-align: right;
+    .name {
+      color: $govuk-brand-colour;
+    }
+    .department-name {
+      margin-left: 5px;
+    }
+    .service-name {
+      font-size: 18px;
+    }
+  }
+}
+
 @media (min-width: 40.0625em) {
   p, .govuk-body, .govuk-body-m {
     line-height: 1.5 !important;
