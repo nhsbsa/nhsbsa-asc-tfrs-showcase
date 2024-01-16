@@ -3,6 +3,8 @@ import { ITheme } from '@/types';
 export const testTheme: ITheme = {
   pageTitlePostfix: 'Hippo Digital',
   name: 'Name',
+  orgName: 'Org name',
+  departmentName: 'Dept name',
   serviceName: 'Service name',
   logo: {
     src: '/theme/images/hippo-data-logo.webp',

@@ -2,7 +2,9 @@ import { ITheme } from '@/types';
 
 export const theme: ITheme = {
   pageTitlePostfix: 'Hippo',
-  name: 'Adult Social Care',
+  name: 'Alpha Assessment',
+  orgName: 'NHS Business Service Authority',
+  departmentName: 'Adult Social Care',
   serviceName: 'Training Fund Reimbursement Service',
   logo: {
     src: '/theme/images/logo.svg',
