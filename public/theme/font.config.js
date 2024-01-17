@@ -31,18 +31,37 @@ export const roboto = localFont({
 
  */
 
-// eslint-disable-next-line camelcase
-import { DM_Sans, Poppins } from 'next/font/google';
+// Lato or DM Sans both work well for body and heading fonts
 
-export const bodyFont = DM_Sans({
-  weight: ['400', '700'],
+// eslint-disable-next-line camelcase
+// import { DM_Sans } from 'next/font/google';
+
+// export const bodyFont = DM_Sans({
+//   weight: ['400', '500', '700'],
+//   subsets: ['latin'],
+//   display: 'swap',
+//   variable: '--font-body',
+// });
+
+// export const headingFont = DM_Sans({
+//   weight: ['700'],
+//   subsets: ['latin'],
+//   display: 'swap',
+//   variable: '--font-header',
+// });
+
+// eslint-disable-next-line camelcase
+import { Lato } from 'next/font/google';
+
+export const bodyFont = Lato({
+  weight: ['300', '400', '700'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-body',
 });
 
-export const headingFont = Poppins({
-  weight: ['400', '700'],
+export const headingFont = Lato({
+  weight: ['700'],
   subsets: ['latin'],
   display: 'swap',
   variable: '--font-header',
