@@ -220,20 +220,20 @@
   {
     "slug": [
       "beta",
-      "service-performance"
+      "recommendations"
     ],
-    "url": "/beta/service-performance",
-    "file": "public/content/beta/service-performance.mdx",
+    "url": "/beta/recommendations",
+    "file": "public/content/beta/recommendations.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
   },
   {
     "slug": [
       "beta",
-      "to-be"
+      "service-performance"
     ],
-    "url": "/beta/to-be",
-    "file": "public/content/beta/to-be.mdx",
+    "url": "/beta/service-performance",
+    "file": "public/content/beta/service-performance.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
   },
@@ -288,16 +288,6 @@
     ],
     "url": "/template/template",
     "file": "public/content/template/template.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
-    "description": "The home page description"
-  },
-  {
-    "slug": [
-      "understanding",
-      "as-is"
-    ],
-    "url": "/understanding/as-is",
-    "file": "public/content/understanding/as-is.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
   },
