@@ -144,7 +144,7 @@ span.govuk-caption-l {
 }
 
 .govuk-header__content {
-  width: 100%;
+  width: 100% !important;
   line-height: 1.5rem;
   .site-meta {
     font-size: 14px;
