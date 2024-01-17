@@ -283,6 +283,16 @@
   },
   {
     "slug": [
+      "template",
+      "template"
+    ],
+    "url": "/template/template",
+    "file": "public/content/template/template.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
       "understanding",
       "as-is"
     ],
