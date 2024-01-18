@@ -25,6 +25,7 @@ import ReadData from '@/components/Data';
 import { MDXComponents } from 'mdx/types';
 import ZoomImage from '@/components//ZoomImage';
 import Image from './Image';
+import LinkBlock from './LinkBlock';
 
 interface MDXProps {
   [key: string]: any
@@ -132,4 +133,5 @@ export const MdxComponents = {
   BackLink,
   WarningCallout,
   ZoomImage,
+  LinkBlock,
 } as MDXComponents;

@@ -251,6 +251,16 @@
   },
   {
     "slug": [
+      "example",
+      "example"
+    ],
+    "url": "/example/example",
+    "file": "public/content/example/example.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
       "how-we-started"
     ],
     "url": "/how-we-started",
@@ -280,16 +290,6 @@
       "Home, /",
       "Documentation, /documentation/"
     ]
-  },
-  {
-    "slug": [
-      "template",
-      "template"
-    ],
-    "url": "/template/template",
-    "file": "public/content/template/template.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
-    "description": "The home page description"
   },
   {
     "slug": [

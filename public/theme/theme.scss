@@ -210,7 +210,7 @@ nav.in-page-nav {
   }
 }
 
-a.signpost {
+a.link-block, a.signpost {
   display: block;
   position: relative;
   margin-bottom: 20px;
@@ -243,6 +243,15 @@ a.signpost {
 
   p {
     margin-bottom: 0;
+  }
+
+  .icon {
+    margin-top: 5px;
+    color: $govuk-secondary-text-colour;
+    font-size: 19px;
+    i {
+      margin-right: 5px;
+    }
   }
   
   &:hover {
