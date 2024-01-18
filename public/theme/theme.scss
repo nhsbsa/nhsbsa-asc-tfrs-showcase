@@ -219,16 +219,6 @@ a.link-block, a.signpost {
   background-color: $theme-lightest-grey;
   text-decoration: none;
 
-  &::after {
-    @extend .fas;
-    position: absolute;
-    top: 16px;
-    right: 10px;
-    color: $govuk-link-colour;
-    font-size: 1.4rem;
-    content: "\f138";
-  }
-  
   h3, h4 {
     margin-bottom: 0;
     margin-bottom: 10px;
@@ -253,7 +243,17 @@ a.link-block, a.signpost {
       margin-right: 5px;
     }
   }
-  
+
+  &::after {
+    @extend .fas;
+    position: absolute;
+    top: calc(50% - 16px);
+    right: 15px;
+    color: $govuk-link-colour;
+    font-size: 2rem;
+    content: "\f138";
+  }
+
   &:hover {
     border-color: $govuk-inset-text-border-colour;
     background-color: $govuk-inset-text-background-colour;
@@ -267,6 +267,77 @@ a.link-block, a.signpost {
   &:focus {
     background-color: $theme-lightest-grey;
     box-shadow: none;
+  }
+
+  &.small {
+    &::after {
+      @extend .fas;
+      position: absolute;
+      top: 16px;
+      right: 10px;
+      color: $govuk-link-colour;
+      font-size: 1.4rem;
+      content: "\f138";
+    }
+  }
+
+  &.next-page, &.previous-page {
+    display: block;
+    position: relative;
+    border-left: 10px solid $theme-lightest-grey;
+    padding: 1rem;
+    padding-right: 50px;
+    background-color: #f2f4ec;
+    text-decoration: none;
+
+    h3, h4 {
+      color: $govuk-text-colour;
+      text-decoration: none;
+
+      &.govuk-heading-m,
+      &.govuk-heading-s {
+        margin-top: 0;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+      color: $govuk-link-colour;
+      text-decoration: underline;
+    }
+
+    &:hover {
+      border-color: $govuk-success-colour;
+      background-color: $theme-light-green;
+      
+      h3, h4 {
+        color: $govuk-text-colour;
+        text-decoration: none;
+      }
+    }
+    
+    &:focus {
+      background-color: $theme-lightest-grey;
+      box-shadow: none;
+    }
+  }
+  
+  &.previous-page {
+  
+    border-left: none;
+    border-right: 10px solid $theme-lightest-grey;
+    padding: 1rem;
+    padding-left: 50px;
+    text-align: right;
+    text-decoration: none;
+  
+    &::after {
+      left: 15px;
+      right: unset;
+      color: $govuk-link-colour;
+      content: "\f137";
+    }
+  
   }
   
 }

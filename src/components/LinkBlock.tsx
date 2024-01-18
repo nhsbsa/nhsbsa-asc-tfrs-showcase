@@ -7,6 +7,7 @@ import React from 'react';
 import Link from 'next/link';
 
 type TLinkBlock = {
+  style?: string
   url?: string
   title?: string
   text?: string
@@ -14,7 +15,7 @@ type TLinkBlock = {
   label?: string
 }
 function LinkBlock({
-  url = '', title = '', text = '', icon = '', label = '',
+  style = '', url = '', title = '', text = '', icon = '', label = '',
 }: TLinkBlock) {
   const router = useRouter();
   const handleClick = (e: React.MouseEvent) => {
@@ -35,8 +36,18 @@ function LinkBlock({
     }
   };
 
+  let className = 'link-block';
+  className += style === 'next' ? ' next-page' : '';
+  className += style === 'prev' ? ' previous-page' : '';
+  className += style === 'small' ? ' small' : '';
+
   return (
-    <Link href={url} onKeyDown={(e) => handleKeydown(e)} onClick={(e) => handleClick(e)} className="link-block">
+    <Link
+      href={url}
+      onKeyDown={(e) => handleKeydown(e)}
+      onClick={(e) => handleClick(e)}
+      className={className}
+    >
       {title && <h4 className="govuk-heading-s">{title}</h4>}
       {text && <p className="govuk-body">{text}</p>}
       <div className="icon">
