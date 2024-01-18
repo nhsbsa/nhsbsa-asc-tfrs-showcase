@@ -16,6 +16,13 @@
   },
   {
     "slug": [
+      "approach"
+    ],
+    "url": "/approach",
+    "file": "public/content/approach/index.mdx"
+  },
+  {
+    "slug": [
       "approach",
       "data"
     ],
