@@ -11,12 +11,19 @@ export default async function SlugLayout({ children }: {
     children: React.ReactNode[]
 }) {
   const {
-    serviceName, headerMenu, footerMenu, logo, name,
+    orgName, name, departmentName, serviceName, headerMenu, footerMenu, logo,
   }: ITheme = theme;
+
   return (
     <>
       <SkipLink text="Skip to main content" toId="mainContent" />
-      <Header serviceName={serviceName} logo={logo} name={name}>
+      <Header
+        orgName={orgName}
+        name={name}
+        departmentName={departmentName}
+        serviceName={serviceName}
+        logo={logo}
+      >
         <Navigation serviceName={serviceName} title="Services" navLinks={headerMenu} />
       </Header>
       {children}

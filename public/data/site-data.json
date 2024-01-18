@@ -16,10 +16,224 @@
   },
   {
     "slug": [
-      "approach"
+      "approach",
+      "data"
     ],
-    "url": "/approach",
-    "file": "public/content/approach/index.mdx",
+    "url": "/approach/data",
+    "file": "public/content/approach/data.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The page description"
+  },
+  {
+    "slug": [
+      "approach",
+      "design"
+    ],
+    "url": "/approach/design",
+    "file": "public/content/approach/design.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The page description"
+  },
+  {
+    "slug": [
+      "approach",
+      "team-and-wow"
+    ],
+    "url": "/approach/team-and-wow",
+    "file": "public/content/approach/team-and-wow.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "approach",
+      "technical"
+    ],
+    "url": "/approach/technical",
+    "file": "public/content/approach/technical.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The page description"
+  },
+  {
+    "slug": [
+      "artefact-archive"
+    ],
+    "url": "/artefact-archive",
+    "file": "public/content/artefact-archive.mdx",
+    "title": "Artefact archive",
+    "description": "Artefact archive"
+  },
+  {
+    "slug": [
+      "assumptions",
+      "assumption-1"
+    ],
+    "url": "/assumptions/assumption-1",
+    "file": "public/content/assumptions/assumption-1.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "assumptions",
+      "assumption-2"
+    ],
+    "url": "/assumptions/assumption-2",
+    "file": "public/content/assumptions/assumption-2.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "assumptions",
+      "assumption-3"
+    ],
+    "url": "/assumptions/assumption-3",
+    "file": "public/content/assumptions/assumption-3.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "assumptions",
+      "assumption-4"
+    ],
+    "url": "/assumptions/assumption-4",
+    "file": "public/content/assumptions/assumption-4.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "beta-backlog"
+    ],
+    "url": "/beta-backlog",
+    "file": "public/content/beta-backlog/index.mdx",
+    "title": "Features",
+    "description": "Features index page",
+    "priority": null,
+    "value": null,
+    "complexity": null,
+    "breadcrumbs": null
+  },
+  {
+    "slug": [
+      "beta-backlog",
+      "01"
+    ],
+    "url": "/beta-backlog/01",
+    "file": "public/content/beta-backlog/01.mdx",
+    "title": "01. Pull data into one place",
+    "description": "Collating all data into a single point of reference",
+    "priority": "later",
+    "value": "High Value",
+    "complexity": "low complexity",
+    "product": "Leavers",
+    "breadcrumbs": null
+  },
+  {
+    "slug": [
+      "beta-backlog",
+      "02"
+    ],
+    "url": "/beta-backlog/02",
+    "file": "public/content/beta-backlog/02.mdx",
+    "title": "02 Title",
+    "description": "Collating all data into a single point of reference",
+    "priority": "next",
+    "value": "High value",
+    "complexity": "High complexity",
+    "product": "Leavers",
+    "layout": null,
+    "breadcrumbs": [
+      "Home, /",
+      "Features, /features"
+    ]
+  },
+  {
+    "slug": [
+      "beta-backlog",
+      "03"
+    ],
+    "url": "/beta-backlog/03",
+    "file": "public/content/beta-backlog/03.mdx",
+    "title": "03 Title",
+    "description": "Collating all data into a single point of reference",
+    "priority": "next",
+    "value": "High value",
+    "complexity": "High complexity",
+    "product": "Leavers",
+    "layout": null,
+    "breadcrumbs": [
+      "Home, /",
+      "Features, /features"
+    ]
+  },
+  {
+    "slug": [
+      "beta-backlog",
+      "04"
+    ],
+    "url": "/beta-backlog/04",
+    "file": "public/content/beta-backlog/04.mdx",
+    "title": "04 Title",
+    "description": "Collating all data into a single point of reference",
+    "priority": "Now",
+    "value": "High value",
+    "complexity": "MEDIUM COMPLEXITY",
+    "product": "Leavers",
+    "layout": null,
+    "breadcrumbs": [
+      "Home, /",
+      "Features, /features"
+    ]
+  },
+  {
+    "slug": [
+      "beta-backlog",
+      "05"
+    ],
+    "url": "/beta-backlog/05",
+    "file": "public/content/beta-backlog/05.mdx",
+    "title": "05 Title",
+    "description": "Collating all data into a single point of reference",
+    "priority": "now",
+    "value": "low value",
+    "complexity": "low complexity",
+    "product": "prototype",
+    "layout": null,
+    "breadcrumbs": [
+      "Home, /",
+      "Features, /features"
+    ]
+  },
+  {
+    "slug": [
+      "beta",
+      "planning"
+    ],
+    "url": "/beta/planning",
+    "file": "public/content/beta/planning.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "beta",
+      "recommendations"
+    ],
+    "url": "/beta/recommendations",
+    "file": "public/content/beta/recommendations.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "beta",
+      "service-performance"
+    ],
+    "url": "/beta/service-performance",
+    "file": "public/content/beta/service-performance.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
   },
@@ -37,121 +251,13 @@
   },
   {
     "slug": [
-      "documentation"
+      "example",
+      "example"
     ],
-    "url": "/documentation",
-    "file": "public/content/documentation.mdx",
-    "title": "Documentation",
-    "description": "Documentation archive"
-  },
-  {
-    "slug": [
-      "features"
-    ],
-    "url": "/features",
-    "file": "public/content/features/index.mdx",
-    "title": "Features",
-    "description": "Features index page",
-    "priority": null,
-    "value": null,
-    "complexity": null,
-    "breadcrumbs": [
-      "NHSBSA, /"
-    ]
-  },
-  {
-    "slug": [
-      "features",
-      "01"
-    ],
-    "url": "/features/01",
-    "file": "public/content/features/01.mdx",
-    "title": "01. Pull data into one place",
-    "description": "Collating all data into a single point of reference",
-    "priority": "later",
-    "value": "High Value",
-    "complexity": "low complexity",
-    "product": "Leavers",
-    "breadcrumbs": [
-      "NHSBSA, /",
-      "Features, /features"
-    ]
-  },
-  {
-    "slug": [
-      "features",
-      "02"
-    ],
-    "url": "/features/02",
-    "file": "public/content/features/02.mdx",
-    "title": "02 Title",
-    "description": "Collating all data into a single point of reference",
-    "priority": "next",
-    "value": "High value",
-    "complexity": "High complexity",
-    "product": "Leavers",
-    "layout": null,
-    "breadcrumbs": [
-      "Home, /",
-      "Features, /features"
-    ]
-  },
-  {
-    "slug": [
-      "features",
-      "03"
-    ],
-    "url": "/features/03",
-    "file": "public/content/features/03.mdx",
-    "title": "03 Title",
-    "description": "Collating all data into a single point of reference",
-    "priority": "next",
-    "value": "High value",
-    "complexity": "High complexity",
-    "product": "Leavers",
-    "layout": null,
-    "breadcrumbs": [
-      "Home, /",
-      "Features, /features"
-    ]
-  },
-  {
-    "slug": [
-      "features",
-      "04"
-    ],
-    "url": "/features/04",
-    "file": "public/content/features/04.mdx",
-    "title": "04 Title",
-    "description": "Collating all data into a single point of reference",
-    "priority": "Now",
-    "value": "High value",
-    "complexity": "MEDIUM COMPLEXITY",
-    "product": "Leavers",
-    "layout": null,
-    "breadcrumbs": [
-      "Home, /",
-      "Features, /features"
-    ]
-  },
-  {
-    "slug": [
-      "features",
-      "05"
-    ],
-    "url": "/features/05",
-    "file": "public/content/features/05.mdx",
-    "title": "05 Title",
-    "description": "Collating all data into a single point of reference",
-    "priority": "now",
-    "value": "low value",
-    "complexity": "low complexity",
-    "product": "prototype",
-    "layout": null,
-    "breadcrumbs": [
-      "Home, /",
-      "Features, /features"
-    ]
+    "url": "/example/example",
+    "file": "public/content/example/example.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
   },
   {
     "slug": [
@@ -187,37 +293,42 @@
   },
   {
     "slug": [
-      "problem"
+      "understanding",
+      "context"
     ],
-    "url": "/problem",
-    "file": "public/content/problem/index.mdx",
+    "url": "/understanding/context",
+    "file": "public/content/understanding/context.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
   },
   {
     "slug": [
-      "test"
+      "understanding",
+      "problem"
     ],
-    "url": "/test",
-    "file": "public/content/test/index.mdx"
+    "url": "/understanding/problem",
+    "file": "public/content/understanding/problem.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
   },
   {
     "slug": [
-      "test",
-      "test-2"
+      "understanding",
+      "research"
     ],
-    "url": "/test/test-2",
-    "file": "public/content/test/test-2/index.mdx"
+    "url": "/understanding/research",
+    "file": "public/content/understanding/research.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
   },
   {
     "slug": [
-      "test",
-      "test-2",
-      "test-3"
+      "understanding",
+      "users"
     ],
-    "url": "/test/test-2/test-3",
-    "file": "public/content/test/test-2/test-3/index.mdx",
-    "title": "Test 3",
-    "description": "Test 3 description"
+    "url": "/understanding/users",
+    "file": "public/content/understanding/users.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
   }
 ]

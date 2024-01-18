@@ -6,6 +6,7 @@
   "plugins": ["testing-library"],
   "rules": {
     "import/no-named-as-default": "off",
+    "import/no-nested-ternary": "off",
     "react/function-component-definition": "off",
     "@typescript-eslint/no-explicit-any": "off",
     "react/require-default-props": "off",

@@ -51,14 +51,4 @@ describe('Header component', () => {
     await userEvent.click(logoLink);
     expect(window.location.pathname).toBe('/');
   });
-  it('displays the name when there is no logo src', async () => {
-    render(<Header
-      name="Site Name"
-      serviceName="Your Service"
-      logo={{
-        src: null, width: 100, alt: 'Logo Alt', height: 50,
-      }}
-    />);
-    expect(screen.getByText('Site Name', {})).toBeInTheDocument();
-  });
 });

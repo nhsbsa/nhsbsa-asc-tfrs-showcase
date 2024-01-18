@@ -18,5 +18,7 @@ export interface ITheme {
     [key: string]: string[]
   }
   logo: { src: string | null; width: number; alt: string; height: number };
+  orgName: string
+  departmentName: string
   serviceName: string
 }

@@ -1,0 +1,29 @@
+---
+title: Features
+description: Features index page
+priority:
+value:
+complexity:
+breadcrumbs:
+---
+
+<Heading caption='Outputs from alpha' tag='h1'>Beta backlog</Heading>
+
+<GridRow>
+    <GridColumn width={'2/3'}>
+        <WarningCallout title={"Awaiting new content"}>
+            These Beta plan activities need to be updated using the plan for the ASC Training Fund Reimbursement Service
+        </WarningCallout>
+        <LeadParagraph>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dolor id nibh ultricies vehicula ut id elit.
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+    </GridColumn>
+</GridRow>
+
+<ReadData apiEndpoint={'/api/data/beta-backlog'}>
+    <SortableLists dataFilter={"slug:beta-backlog"} sortBy={{
+        'priority': ['now', 'next', 'later'], 'sizing': ['small', 'medium', 'large', 'unknown']
+    }} className="sortable-cards" />
+</ReadData>

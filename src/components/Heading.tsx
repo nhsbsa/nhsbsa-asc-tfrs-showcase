@@ -1,20 +1,23 @@
+/* eslint-disable react/jsx-one-expression-per-line */
 import React from 'react';
 
 type Props = {
   tag: string
   className?: string
   caption?: string
+  kicker?: string
   children: React.ReactNode
 }
 const Heading = ({
-  tag = 'H1', className = 'govuk-heading-xl', caption = '', children,
+  tag = 'H1', className = 'govuk-heading-xl', caption = '', kicker = '', children,
 }:Props) => {
   const htmlTag = () => {
     const T = tag.toLowerCase().trim();
     switch (T) {
       case 'h1': return (
         <h1 className={className}>
-          {caption && <span className="govuk-caption-xl">{caption}</span>}
+          {caption && kicker && <span className="govuk-caption-l"><em>{kicker}</em>{caption}</span>}
+          {caption && !kicker && <span className="govuk-caption-l">{caption}</span>}
           {children}
         </h1>
       );

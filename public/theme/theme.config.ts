@@ -2,13 +2,15 @@ import { ITheme } from '@/types';
 
 export const theme: ITheme = {
   pageTitlePostfix: 'Hippo',
-  name: 'Adult Social Care - Training Fund Reimbursement Service',
-  serviceName: '',
+  name: 'Alpha Assessment',
+  orgName: 'NHS Business Service Authority',
+  departmentName: 'Adult Social Care',
+  serviceName: 'Training Fund Reimbursement Service',
   logo: {
-    src: '/theme/images/care-logo.svg',
-    height: 35,
-    width: 114,
-    alt: 'Hippo',
+    src: '/theme/images/logo.svg',
+    height: 48,
+    width: 200,
+    alt: 'NHS Business Service Authority',
   },
   tagsColours: {
     blue: [],
@@ -22,27 +24,27 @@ export const theme: ITheme = {
     yellow: ['Medium priority'],
   },
   headerMenu: [
-    /*{
-      content: 'Home',
-      title: 'Home',
-      link: '/',
-    },
-    {
-      content: 'Features',
-      title: 'All features of this project',
-      link: '/features',
-    },*/
   ],
   footerMenu: [
+    {
+      content: 'Alpha overview',
+      link: '/',
+      title: 'Showcase start page',
+    },
+    {
+      content: 'Artefact archive',
+      link: '/artefact-archive',
+      title: 'Search the artefact archives',
+    },
+    {
+      content: 'Beta backlog',
+      link: '/beta-backlog',
+      title: 'Explore the beta backlog',
+    },
     {
       content: 'Glossary',
       link: '/glossary',
       title: 'View a glossary of agreed terms for this work',
-    },
-    {
-      content: 'The Team',
-      link: '/team',
-      title: 'Meet the multi-disciplinary team that worked on the alpha',
     },
   ],
 };
