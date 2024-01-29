@@ -8,14 +8,15 @@ description: The page description
 <GridRow>
     <GridColumn width={'2/3'}>
         <LeadParagraph>
-            Cras mattis consectetur purus sit amet fermentum. Donec sed odio dui.
+            We have followed a rigorous design methodology where we have taken a collaborative, multidisciplinary approach to design to ensure that our prototype has developed over time to best meet the needs of the users within the adult social care policy space.
         </LeadParagraph>
     </GridColumn>
     <GridColumn width={'1/3'}>
         <nav className="in-page-nav">
             #### On this page
-            * [Section one](#section-one)
-            * [Section two](#section-two)
+            * [Design practices and approach](#design-practices-and-approach)
+            * [Major design versions](#major-design-versions)
+            * [Investigation themes](#investigation-themes)
         </nav>
     </GridColumn>
 </GridRow>
@@ -23,14 +24,20 @@ description: The page description
 <GridRow>
 
     <GridColumn width={'full'}>
-        ## Section one
+        ## Design practices and approach
     </GridColumn>
 
     <GridColumn width={'3/4'}>
 
-        Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
+        At each stage of the design process, we used research findings to develop new hypotheses to test and to determine whether previous hypotheses could be validated or not. These are all documented in our design log.
 
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+        All design decisions have been based on user needs, though where necessary we have also been mindful of business needs, such as those around the processing of claims.
+
+        The whole team was involved in design ideation discussions, though detailed design work was carried out in partnership between the interaction and content designers on the team. This was done in face to face sessions, which maximised opportunities for collaboration and multidisciplinary design synergies.
+
+        We agreed with DHSC early on that we would use the [GOV.UK design system](https://design-system.service.gov.uk/), though where necessary we also explored components and patterns from related departmental design systems (such as MOJ and HMRC).
+
+        We have identified a new use case for the GDS 'check answers' pattern. We plan to continue exploring this in beta and if it proves to be successful we will share our evidence with the wider government design community.
 
     </GridColumn>
 
@@ -39,14 +46,246 @@ description: The page description
 <GridRow>
 
     <GridColumn width={'full'}>
-        ## Section two
+        ## Major design versions
     </GridColumn>
 
     <GridColumn width={'3/4'}>
 
-        Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
+        We agreed early in alpha to focus predominantly on the part of the service that would be used by people submitting and managing claims. While we have started to think about the related part of the service for internal NHSBSA users, the main design work on this will take place in early beta.
 
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+        We produced 10 major iterations of the submission prototype. Each of these can be explored from the prototype repository.
+
+        ### Version 1
+
+        This was an internal prototype we used to explore possible data groupings and approaches to represent and manage claims.
+
+        ### Version 2
+
+        Another internal prototype where we started to look at how claims would progress through the system and the statuses we'd need within the service.
+
+        ### Version 3
+
+        The first version tested with users, though it did not include dynamic data so rather than true scenario-based usability testing, users walked through the service and gave their thoughts on each screen within the claim submission journey.
+
+        This version:
+
+        * added the 'start now' and eligibility guidance screens
+        * iterated the claim statuses from 9 down to 5 options
+        * introduced search filters
+        * added workflows for starting claims by either learner or event
+
+        ### Version 4
+
+        This was the basis for the second round of user testing. We added large volumes of realistic data on learners, courses and claims to enable true usability testing to take place.
+
+        This version:
+
+        * explored terminology around the different funding pots and claims
+        * combined the flows to create a new claim
+        * introduced the GDS 'add a new item' pattern when adding multiple learners to a claim
+        * added confirmation pages and emails
+        * split the 'add evidence' flow from the 'add claim' flow to make it easier to add evidence as a subsequent step to starting a new claim
+
+        ### Version 5
+
+        This was used in the third round of user testing and made a number of major design changes.
+
+        This version:
+
+        * made further terminology refinements, for example to clarify that the service cannot be used to book training
+        * introduced a new claim screen to make it much easier for users to see what claim information they'd alredy added and what was incomplete or missing
+        * changed the concept of a claim to relate to a set of learners doing a course on a particular date (rather than a claim only ever being for one learner) which massively shortens the claims list and relates better to users' mental models
+        * got the filters working
+        * added column sorting and dummy pagination links to the 'manage claims' screen
+
+        ### Version 6
+
+        This version brought together all the findings from alpha into a final prototype covering the claim submission and management user journeys. It was not tested with users.
+
+        This version:
+
+        * added the agreed service and funding pot names and iterated the start and eligibility pages
+        * introduced an initial version of a dashboard screen to route users to the different options available to them and provide a summary of claims within the service
+        * introduced a new help page around starting a new claim
+        * made final iterations to the claim statuses (removing the 'ready to submit' status and introducing the 'approved' status)
+        * improved the claim screen by making the design more consistent with the GDS 'check answers' pattern, making it easier to add evidence, simplifying the cost requirements and adding a payment date field
+        * replaced the claim filters with a global search and added a new advanced search screen
+        * added the start and manage claim screens for CPD claims
+        * started to consider the implications of split claims, where 60% of the reimbursement is provided upfront and 40% on completion
+
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Investigation themes
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+
+        Over the course of iterating the prototype several important themes emerged which we have spent a lot of time thinking about and which have between them contributed to the final shape of the prototype.
+
+        ### What a claim is
+
+        We realised early in alpha that it would be important to define exactly what constitutes a claim as part of this service. We knew a claim could be made up of a combination of activities (such a course on a specific date) and learners (who attended the course). But we weren't sure how wide a claim should be. Would users want to submit multiple activities and learners in a single claim?
+
+        We decided to start with the finest granularity we could and see what users made of this. This would be a single learner associated with a single activity. We called this a 'claim item' as we hypothesised that users would expect to combine multiple claim items into a single 'claim', which they would submit to NHSBSA on a periodic basis.
+
+        So if a particular course was attended by 5 learners, this would equate to 5 claim items.
+
+        We tested this approach in version 3 of the prototype. We found that users had no problem with the concept of 'claims' but were confused by a 'claim item' and found it hard to guess what this might be. In version 4 we dropped the 'items' and just called these activity/learner pairings 'claims'. This seemed somewhat better for users but their expectation was generally that claims should be based around activities. And the individual activity/learner pairings made the list of claims very long and unwieldy.
+
+        So in version 5 we changed our concept of a claim to relate to any number of learners associated with a specific activity (on the same date). This considerably shortened the list of claims in each status and fitted much better with users' mental models.
+
+        ### Mental scaffolding
+
+        In early versions of the prototype we had a 'one question per screen' approach to the start a new claim flow, allowing users to build up the information that made up a claim.
+
+        What we found, however, was that while each individual question within the flow was understood by users, many of them were confused by where they were in the process and how much of a claim they had already completed or had left to fill in. They also wanted flexibility in terms of the order in which they entered information.
+
+        In version 5 we therefore created a new claim screen, which we hypothesised would provide the 'mental scaffolding' to enable users to visualise a claim before they started filled in the information and to understood their progress.
+
+        We adapted the GDS 'check answers' pattern for this screen, though in our versions users would see the list of items before they'd added their 'answers' and use it as a checklist to enable them to add the information in whatever order they wished.
+
+        This worked really well in general, though users still found a few things slightly confusing. For example, we used 'incomplete' tags to indicate where information had not yet been added. But some users thought this meant that the claim had already been started. There was also some confusion with the overall claim status of 'incomplete'.
+
+        In version 6 we iterated this screen to bring the pattern more in line with the GDS check answers pattern and remove the 'incomplete' tags. We expect this to test well in early beta but can further fine tune it if necessary.
+        
+        ### Explaining the types of funding
+
+        The scheme policy describes 2 types of funding that will be available through the reimbursement service. One of the content design challenges was to find an appropriate way to describe these 'funding pots'.
+
+        The DHSC service commission used the terms 'targeted upskilling' for the primary pot and 'Continuing Professional Development' for the other. We suspected these would not be terms that users would naturally understand or find useful but felt they were the best place to start in version 3. We then explored alternative terminology in versions 4 and 5, as shown in the table below.
+
+        <Table>
+            <TableHeader>
+                <TableCell>Prototype</TableCell>
+                <TableCell>Primary funding pot</TableCell>
+                <TableCell>Secondary funding pot</TableCell>
+            </TableHeader>
+            <TableRow>
+                <TableCell width="50%">
+                    Version 3
+                </TableCell>
+                <TableCell>
+                    Targeted upskilling
+                </TableCell>
+                <TableCell>
+                    Continuing Professional Development
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell>
+                    Version 4
+                </TableCell>
+                <TableCell>
+                    Direct care
+                </TableCell>
+                <TableCell>
+                    Professional revalidation
+                </TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell>
+                    Version 5
+                </TableCell>
+                <TableCell>
+                    Non-registered professionals
+                </TableCell>
+                <TableCell>
+                    Registered professionals
+                </TableCell>
+            </TableRow>
+        </Table>
+
+        Up to version 5, none of the wording went down well with all the users we tested it with.
+
+        'Targeted upskilling' felt like a meaningless piece of jargon and while 'Continuing Professional Development' was understood by many (though not all) users, it was often used very generically so was not specific enough to differentiate between the pots.
+
+        'Direct care' was a well understood and used term but again was not specific enough, as it also covered the staff eligible for the secondary funding pot. 'Professional revalidation' felt like a better and more specific way to described the secondary pot and while not everyone had heard the term, they understood it when they read the description.
+
+        When we tested 'non-registered professionals' against 'registered professionals', the big problem was that the primary funding pot also covers registered managers. Though they're only a small group, users told us it didn't feel appropriate that registered professionals were included within the 'non-registered' pot.
+
+        We therefore decided to carry out one final small round of testing at the end of alpha and present 2 options for the funding pot names to users, based on everything we'd learnt so far.
+
+        Option A used 'Care skills funding' for the primary pot, which as an arbitrary name we could define as appropriate. 'Revalidation funding' was used for the secondary pot, a form of the name that had already tested positively.
+
+        Option B used a slightly different approach by splitting the funding into 3 pots rather than 2. This allowed us to define the eligible users more precisely. We called the pots 'Non-registered direct care professionals', 'Registered managers' and 'Registered direct care professionals'.
+
+        The result was… [tbc]
+
+        ### Tension between simplicity and flexibility
+
+        There is always a trade off in design between making things as simple as possible for a user but also ensuring the service is flexible enough to support different expectations and ways of working. We have been aware of this throughout the process of iterating the prototype.
+
+        For example, we considered what should happen if a training course was covered by more than one invoice. For instance, an employer might pay for several members of staff to attend some training and then subsequently pay separately for some additional colleagues.
+
+        In this case, the most flexible approach would be to allow separate evidence of payment to be uploaded against each learner within a claim. But this also makes the process of constructing a claim more complicated. Following usability testing, the approach we have ended up with in version 6 of the prototype is to say that each claim must relate to a single invoice. This simplifies the design of the claim screen by only requiring a single piece of payment evidence to be uploaded. It does mean, however, that in the case of multiple invoices for a single activity, several claims would need to be submitted.
+
+        This feels like a reasonable approach but is something we will continue to explore - with both end users and NHSBSA users - in early beta.
+
+        ### Claim statuses
+
+        Fundemental to the management of claims is the ability to track them through the end-to-end process. We realised early in alpha this woiuld require a set of clear and unambiguous claim statuses. We have iterated these over the course of alpha, starting with 9 options (version a in the table below) and ending alpha with 5 (version c). Based on usability testing, these final statuses are well understood by users.
+
+        <Table>
+            <TableHeader>
+                <TableCell>Version a</TableCell>
+                <TableCell>Version b</TableCell>
+                <TableCell>Version c</TableCell>
+            </TableHeader>
+            <TableRow>
+                <TableCell>Incomplete</TableCell>
+                <TableCell>Incomplete</TableCell>
+                <TableCell>Not yet submitted</TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell>Complete</TableCell>
+                <TableCell></TableCell>
+                <TableCell></TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell>Ready to submit</TableCell>
+                <TableCell>Ready to submit</TableCell>
+                <TableCell></TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell>Submitted</TableCell>
+                <TableCell>Submitted</TableCell>
+                <TableCell>Submitted</TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell>In processing</TableCell>
+                <TableCell></TableCell>
+                <TableCell></TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell>Approved</TableCell>
+                <TableCell></TableCell>
+                <TableCell>Approved</TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell>Rejected</TableCell>
+                <TableCell></TableCell>
+                <TableCell></TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell>Queried</TableCell>
+                <TableCell>Insufficient evidence</TableCell>
+                <TableCell>Queried by NHSBSA</TableCell>
+            </TableRow>
+            <TableRow>
+                <TableCell>Paid</TableCell>
+                <TableCell>Paid</TableCell>
+                <TableCell>Paid</TableCell>
+            </TableRow>
+        </Table>
+
+        Our thinking around the statuses was driven by the need for them to be understood by users without needing explanation. The use of tabs on the manage claims screen, which users liked as they could see their claims moving from left to right through the process, also meant that we were limited by the amount of space on the screen.
+
+        Insights around the 'ready to submit' status were particularly interesting. While users understood this status (representing those claims which had no missing information and were therefore ready to be submitted for processing) and felt it was useful, it did not work in practice. What we found in usability testing of version 5 of the prototype was that users were confused about when claims moved from the 'incomplete' to the 'ready to submit' status, especially as it might look as if a claim was complete when actually more learners were due to be added. This could lead to claims being submitted prematurely.
 
     </GridColumn>
 
