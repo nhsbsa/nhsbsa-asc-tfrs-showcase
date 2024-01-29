@@ -304,6 +304,16 @@
   {
     "slug": [
       "understanding",
+      "glossary"
+    ],
+    "url": "/understanding/glossary",
+    "file": "public/content/understanding/glossary.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "Glossary of frequently used acronyms and terms"
+  },
+  {
+    "slug": [
+      "understanding",
       "problem"
     ],
     "url": "/understanding/problem",
