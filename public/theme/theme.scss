@@ -472,6 +472,22 @@ div.person-profile {
   }
 }
 
+dl {
+  font-family: var(--font-body);
+  font-size: 19px;
+  line-height: 1.5rem;
+
+  dt {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  dd {
+    margin-left: 0;
+    margin-bottom: 20px;
+  }
+}
+
 // BELOW IS A BIT HACKY
 // SHOULD BE MORE LOGIC IN COMPONENTS > SORTABLELISTS.TSX BUT RAN OUT OF TIME
 
