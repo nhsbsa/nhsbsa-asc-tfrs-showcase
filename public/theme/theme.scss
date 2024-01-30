@@ -113,7 +113,17 @@ h1, h2, h3, h4, h5, h6 {
 
 h2.govuk-heading-l { margin-top: 50px; }
 h3.govuk-heading-m { margin-top: 30px; }
-h4.govuk-heading-s { margin-top: 30px; }
+h4.govuk-heading-s {
+  margin-top: 30px;
+  font-size: 20px;
+}
+h5.govuk-heading-xs {
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: $govuk-tag-blue;
+  font-family: $govuk-font-family-headings;
+  font-size: 18px;
+}
 
 span.govuk-caption-l {
   em {
