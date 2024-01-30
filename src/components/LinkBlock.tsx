@@ -5,8 +5,6 @@
 import { useRouter } from 'next/navigation';
 import React from 'react';
 import Link from 'next/link';
-// eslint-disable-next-line no-unused-vars
-import styles from './link-block.module.scss';
 
 type TLinkBlock = {
   style?: string
