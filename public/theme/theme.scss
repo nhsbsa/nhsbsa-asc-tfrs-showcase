@@ -210,7 +210,7 @@ nav.in-page-nav {
   }
 }
 
-a.link-block, a.signpost {
+a.link-block {
   display: block;
   position: relative;
   margin-bottom: 20px;
@@ -340,80 +340,6 @@ a.link-block, a.signpost {
   
   }
   
-}
-
-a.next-page {
-  display: block;
-  position: relative;
-  border-left: 10px solid $theme-lightest-grey;
-  padding: 1rem;
-  padding-right: 50px;
-  background-color: #f2f4ec;
-  text-decoration: none;
-
-  &::after {
-    @extend .fas;
-    position: absolute;
-    top: calc(50% - 16px);
-    right: 15px;
-    color: $govuk-link-colour;
-    font-size: 2rem;
-    content: "\f138";
-  }
-  
-  h3, h4 {
-    margin-top: 0;
-    margin-bottom: 10px;
-    
-    &.govuk-heading-m,
-    &.govuk-heading-s {
-      margin-top: 0;
-    }
-  }
-  
-  p {
-    margin-bottom: 0;
-    color: $govuk-link-colour;
-    text-decoration: underline;
-  }
-  
-  &:hover {
-    border-color: $govuk-success-colour;
-    background-color: $theme-light-green;
-    
-    p {
-      color: $govuk-success-colour;
-    }
-    
-    &::after {
-      color: $govuk-success-colour;
-    }
-  }
-
-  &:focus {
-    background-color: $theme-lightest-grey;
-    box-shadow: none;
-  }
-
-}
-
-a.previous-page {
-  @extend .next-page;
-
-  border-left: none;
-  border-right: 10px solid $theme-lightest-grey;
-  padding: 1rem;
-  padding-left: 50px;
-  text-align: right;
-  text-decoration: none;
-
-  &::after {
-    left: 15px;
-    right: unset;
-    color: $govuk-link-colour;
-    content: "\f137";
-  }
-
 }
 
 span.hint-enlarge {
