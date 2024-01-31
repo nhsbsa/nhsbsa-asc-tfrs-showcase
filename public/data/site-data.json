@@ -314,6 +314,16 @@
   {
     "slug": [
       "understanding",
+      "naming"
+    ],
+    "url": "/understanding/naming",
+    "file": "public/content/understanding/naming.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "understanding",
       "problem"
     ],
     "url": "/understanding/problem",
