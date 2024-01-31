@@ -1,267 +1,232 @@
 [
   {
-    "title": "Online guidance for the bereaved",
+    "title": "Online guidance about the TFRS service",
     "priority": "now",
     "sizing": "small"
   },
   {
-    "title": "Online guidance for staff who certify deaths",
+    "title": "Online guidance on what L&D activities are eligible",
+    "priority": "now",
+    "sizing": "small"
+  },
+  {
+    "title": "Online guidance on who is eligible to claim reimbursement",
+    "priority": "now",
+    "sizing": "small"
+  },
+  {
+    "title": "Capturing bank details",
+    "priority": "now",
+    "sizing": "small"
+  },
+  {
+    "title": "Start page for claims",
+    "priority": "now",
+    "sizing": "small"
+  },
+  {
+    "title": "Start a new TU claim",
+    "priority": "now",
+    "sizing": "small"
+  },
+  {
+    "title": "Start a new CPD claim",
+    "priority": "now",
+    "sizing": "small"
+  },
+  {
+    "title": "Add TU course details",
+    "priority": "now",
+    "sizing": "small"
+  },
+  {
+    "title": "Add CPD details ",
+    "priority": "now",
+    "sizing": "small"
+  },
+  {
+    "title": "Upload evidence",
+    "priority": "now",
+    "sizing": "small"
+  },
+  {
+    "title": "Submit CPD claim",
+    "priority": "now",
+    "sizing": "small"
+  },
+  {
+    "title": "TU claim dashboard",
     "priority": "now",
     "sizing": "medium"
   },
   {
-    "title": "Create an account (CIS2)",
+    "title": "CPD claim dashboard",
+    "priority": "now",
+    "sizing": "medium"
+  },
+  {
+    "title": "Organisation account reporting",
+    "priority": "now",
+    "sizing": "medium"
+  },
+  {
+    "title": "Search for courses",
+    "priority": "now",
+    "sizing": "medium"
+  },
+  {
+    "title": "Create new learner",
+    "priority": "now",
+    "sizing": "medium"
+  },
+  {
+    "title": "Check CPD balance",
+    "priority": "now",
+    "sizing": "medium"
+  },
+  {
+    "title": "Processing notifications",
+    "priority": "now",
+    "sizing": "medium"
+  },
+  {
+    "title": "Reimbursement payment processing",
+    "priority": "now",
+    "sizing": "medium"
+  },
+  {
+    "title": "Delegated signatory/organisation registration",
     "priority": "now",
     "sizing": "large"
   },
   {
-    "title": "Attending practitioner, medical examiner, medical examiner officer log-in (CIS2)",
+    "title": "Declaration letter of determination",
     "priority": "now",
     "sizing": "large"
   },
   {
-    "title": "GMC subscription no.",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Start an MCCD as an attending practitioner",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Start an MCCD as an Medical Examiner",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Attending practitioner case view",
-    "priority": "now",
-    "sizing": "medium"
-  },
-  {
-    "title": "Save and resume",
-    "priority": "now",
-    "sizing": "medium"
-  },
-  {
-    "title": "Check details as an attending practitioner",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Check details as a medical examiner",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Record representative details",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Record patient information",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Record information about the death",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Record information for ONS reporting",
-    "priority": "now",
-    "sizing": "medium"
-  },
-  {
-    "title": "Record relevant data for burial and cremation",
-    "priority": "now",
-    "sizing": "medium"
-  },
-  {
-    "title": "Welsh bi-lingual questions",
+    "title": "Account and organisation validation",
     "priority": "now",
     "sizing": "large"
   },
   {
-    "title": "Post-code look-up",
+    "title": "Account login",
     "priority": "now",
+    "sizing": "large"
+  },
+  {
+    "title": "Submit TU claim",
+    "priority": "now",
+    "sizing": "large"
+  },
+  {
+    "title": "Review submitted claims",
+    "priority": "now",
+    "sizing": "large"
+  },
+  {
+    "title": "Approve submitted claim",
+    "priority": "now",
+    "sizing": "large"
+  },
+  {
+    "title": "Reject submitted claim",
+    "priority": "now",
+    "sizing": "large"
+  },
+  {
+    "title": "Account and claims view-only access",
+    "priority": "now",
+    "sizing": "large"
+  },
+  {
+    "title": "Eligibility checker",
+    "priority": "next",
     "sizing": "small"
   },
   {
-    "title": "Field validations",
-    "priority": "now",
-    "sizing": "medium"
-  },
-  {
-    "title": "Review and confirm information",
-    "priority": "now",
+    "title": "Add existing learner",
+    "priority": "next",
     "sizing": "small"
   },
   {
-    "title": "Automated email notification to Medical examiner office",
-    "priority": "now",
-    "sizing": "medium"
-  },
-  {
-    "title": "View MCCD as Medical Examiner Officer",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "View MCCD as Medical Examiner",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Summary of proposed changes",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Automated notification for attending practitioner amends",
-    "priority": "now",
-    "sizing": "medium"
-  },
-  {
-    "title": "Attending practitioner access to make amendments",
-    "priority": "now",
-    "sizing": "medium"
-  },
-  {
-    "title": "Make amendments as an attending practitioner",
-    "priority": "now",
-    "sizing": "medium"
-  },
-  {
-    "title": "Confirm amendments",
-    "priority": "now",
-    "sizing": "medium"
-  },
-  {
-    "title": "Enter or select medical examiner office details",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Automated email to medical examiner office to view and sign off amends",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Medical examiner declaration",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Enter or select local registrar details",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "Email to registry office",
-    "priority": "now",
-    "sizing": "small"
-  },
-  {
-    "title": "MCCD attachment for local registry office",
-    "priority": "now",
-    "sizing": "medium"
-  },
-  {
-    "title": "Notice to informant",
+    "title": "User management",
     "priority": "next",
     "sizing": "medium"
   },
   {
-    "title": "Record request for rapid release",
+    "title": "Organisation account management",
     "priority": "next",
     "sizing": "medium"
   },
   {
-    "title": "Create log-in (non-CIS2)",
+    "title": "Manage organisation learners",
+    "priority": "next",
+    "sizing": "medium"
+  },
+  {
+    "title": "View course details",
+    "priority": "next",
+    "sizing": "medium"
+  },
+  {
+    "title": "Keyword claims search",
+    "priority": "next",
+    "sizing": "medium"
+  },
+  {
+    "title": "Adding additional account users",
     "priority": "next",
     "sizing": "large"
   },
   {
-    "title": "Identify all appropriate organisations for on boarding (non-CIS2)",
+    "title": "Organisation notifications",
     "priority": "next",
     "sizing": "large"
   },
   {
-    "title": "Delete incomplete cases",
-    "priority": "next",
-    "sizing": "medium"
-  },
-  {
-    "title": "Save as draft feature",
-    "priority": "next",
-    "sizing": "large"
-  },
-  {
-    "title": "PDS integration",
-    "priority": "next",
-    "sizing": "medium"
-  },
-  {
-    "title": "Age calculator",
-    "priority": "next",
-    "sizing": "small"
-  },
-  {
-    "title": "NHS number validation",
-    "priority": "next",
-    "sizing": "unknown"
-  },
-  {
-    "title": "Medical examiner office view of certificates for scrutiny",
-    "priority": "next",
-    "sizing": "medium"
-  },
-  {
-    "title": "Filter certificates by priority for scrutiny",
-    "priority": "next",
-    "sizing": "medium"
-  },
-  {
-    "title": "Track certificate involvement",
-    "priority": "next",
-    "sizing": "medium"
-  },
-  {
-    "title": "Attending practitioner & Medical examiner office contact details",
-    "priority": "next",
-    "sizing": "medium"
-  },
-  {
-    "title": "Case re-assignment if attending practitioner is unavailable",
-    "priority": "next",
-    "sizing": "medium"
-  },
-  {
-    "title": "Integration with General registry service (GRS)",
+    "title": "Organisation dashboard",
     "priority": "later",
-    "sizing": "unknown"
+    "sizing": "small"
   },
   {
-    "title": "Explore adding attachments to MCCD",
+    "title": "Check cap balance",
     "priority": "later",
-    "sizing": "unknown"
+    "sizing": "medium"
   },
   {
-    "title": "Explore integration with NHS systems e.g. System1",
+    "title": "Add claim notes",
     "priority": "later",
-    "sizing": "unknown"
+    "sizing": "medium"
   },
   {
-    "title": "Explore integration with Medical examiner service",
+    "title": "Bulk add learners",
     "priority": "later",
-    "sizing": "unknown"
+    "sizing": "large"
   },
   {
-    "title": "Explore data insights and service performance measures",
+    "title": "Review submitted account notes",
     "priority": "later",
-    "sizing": "unknown"
+    "sizing": "large"
+  },
+  {
+    "title": "Add internal account notes",
+    "priority": "later",
+    "sizing": "large"
+  },
+  {
+    "title": "Edit internal account notes",
+    "priority": "later",
+    "sizing": "large"
+  },
+  {
+    "title": "Advanced claims search",
+    "priority": "later",
+    "sizing": "large"
   }
 ]
+
+
+
+
+

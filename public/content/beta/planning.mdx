@@ -7,15 +7,15 @@ description: The home page description
 
 <GridRow>
     <GridColumn width={'2/3'}>
-        <LeadParagraph>
-            Donec ullamcorper nulla non metus auctor fringilla. Nulla vitae elit libero, a pharetra augue.
-        </LeadParagraph>
+        <LeadParagraph>We aim to take a pragmatic approach to beta and ensure we build what we are confident is proven, whilst continuing to investigate and test iteratively. We will add functions and features that will help us continue to meet service outcomes and product objectives.</LeadParagraph>
     </GridColumn>
     <GridColumn width={'1/3'}>
         <nav className="in-page-nav">
             #### On this page
-            * [Section one](#section-one)
-            * [Section two](#section-two)
+            * [Summary of approach](#summary-of-approach)
+            * [Principles of private beta](#principles-of-private-beta)
+            * [Beta plan](#beta-plan)
+            * [Beta backlog](#beta-backlog)
         </nav>
     </GridColumn>
 </GridRow>
@@ -23,14 +23,14 @@ description: The home page description
 <GridRow>
 
     <GridColumn width={'full'}>
-        ## Section one
+        ## Summary of approach
     </GridColumn>
 
     <GridColumn width={'3/4'}>
 
-        Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
+        The team have been organically working towards Beta by validating and investigating user needs and technical options as we've progressed sprint by sprint.
 
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+        In sprint 8 we came together for several beta planning workshops. We managed to group features within the service map to understand what features and functionality were Now, Next, and Later (based on value - meeting user needs and outcomes versus effort).
 
     </GridColumn>
 
@@ -39,18 +39,47 @@ description: The home page description
 <GridRow>
 
     <GridColumn width={'full'}>
-        ## Section two
+        ## Principles of private beta
     </GridColumn>
 
     <GridColumn width={'3/4'}>
 
-        Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
-
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+        * A mix of adult social care providers of both size and learning activities.
+        * Align as closely as possible with policy rollout and communication.
+        * Staged roll-out starting with organisation onboarding and claim submissions.
+        * Align with the roll-out of supporting services in the adult social care sector such as the Care Workforce Pathway and Digital Passport.
 
     </GridColumn>
 
 </GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Beta plan
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+
+        <ZoomImage alt="Beta plan" small={'../../images/beta-plan.jpg'} large={'../../images/beta-plan.jpg'} showZoom showDownload />
+
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Beta backlog
+    </GridColumn>
+
+</GridRow>
+
+<ReadData apiEndpoint={'/api/data/beta-backlog'}>
+    <SortableLists dataFilter={"slug:beta-backlog"} sortBy={{
+        'priority': ['now', 'next', 'later'], 'sizing': ['small', 'medium', 'large', 'unknown']
+    }} className="sortable-cards" />
+</ReadData>
 
 <GridRow>
     <GridColumn width={'full'}>
