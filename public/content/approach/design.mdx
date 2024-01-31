@@ -98,12 +98,23 @@ description: The page description
 
         ### Version 6
 
-        This version brought together all the findings from alpha into a final prototype covering the claim submission and management user journeys. It was not tested with users.
+        This was put together to support the final round of user testing, which focused on content and wording.
 
         <Details title={'Specific features of version 6'}>
-            * Added the agreed service and funding pot names and iterated the start and eligibility pages
+            * Added the recommended service name
+            * Created 2 separate versions of the start page to allow us to get feedback on what to name the funding pots
+            * Iterated the eligibility pages
+            * Introduced a new help page around starting a new claim, which both video and text content
+        </Details>
+        
+        ### Version 7
+
+        This version brought together all the findings from alpha into a final prototype covering the claim submission and management user journeys. It has not yet been tested with users.
+
+
+        <Details title={'Specific features of version 7'}>
+            * Added the agreed funding pot names
             * Introduced an initial version of a dashboard screen to route users to the different options available to them and provide a summary of claims within the service
-            * Introduced a new help page around starting a new claim
             * Made final iterations to the claim statuses (removing the 'ready to submit' status and introducing the 'approved' status)
             * Improved the claim screen by making the design more consistent with the GDS 'check answers' pattern, making it easier to add evidence, simplifying the cost requirements and adding a payment date field
             * Replaced the claim filters with a global search and added a new advanced search screen
@@ -139,13 +150,13 @@ description: The page description
 
         <GridRow>
             <GridColumn width={'1/3'}>
-                <ZoomImage alt="Version 3 used the concept of 'claim items', with each item grouped by individual learner." small={'../../images/ui-manage-claim-items.png'} medium={'../../images/ui-manage-claim-items.png'} />
+                <ZoomImage alt="Version 3 used the concept of 'claim items', with each item grouped by individual learner." small={'../../images/ui-manage-claim-items-thumb.png'} medium={'../../images/ui-manage-claim-items.png'} />
             </GridColumn>
             <GridColumn width={'1/3'}>
-                <ZoomImage alt="Version 4 moved from 'claim items' to 'claims' and lost the grouping, though each item still just related to a specific learner." small={'../../images/ui-manage-claims-1.png'} medium={'../../images/ui-manage-claims-1.png'} />
+                <ZoomImage alt="Version 4 moved from 'claim items' to 'claims' and lost the grouping, though each item still just related to a specific learner." small={'../../images/ui-manage-claims-1-thumb.png'} medium={'../../images/ui-manage-claims-1.png'} />
             </GridColumn>
             <GridColumn width={'1/3'}>
-                <ZoomImage alt="Version 5 expanded the concept of a claim to cover multiple learners." small={'../../images/ui-manage-claims-2.png'} medium={'../../images/ui-manage-claims-2.png'} />
+                <ZoomImage alt="Version 5 expanded the concept of a claim to cover multiple learners." small={'../../images/ui-manage-claims-2-thumb.png'} medium={'../../images/ui-manage-claims-2.png'} />
             </GridColumn>
         </GridRow>
 
@@ -161,7 +172,16 @@ description: The page description
 
         This worked really well in general, though users still found a few things slightly confusing. For example, we used 'incomplete' tags to indicate where information had not yet been added. But some users thought this meant that the claim had already been started. There was also some confusion with the overall claim status of 'incomplete'.
 
-        In version 6 we iterated this screen to bring the pattern more in line with the GDS check answers pattern and remove the 'incomplete' tags. We expect this to test well in early beta but can further fine tune it if necessary.
+        In version 7 we iterated this screen to bring the pattern more in line with the GDS check answers pattern and remove the 'incomplete' tags. We expect this to test well in early beta but can further fine tune it if necessary.
+
+        <GridRow>
+            <GridColumn width={'1/3'}>
+                <ZoomImage alt="Version 3 used the one question per page approach to creating a claim and provided separate flows by learner or event." small={'../../images/ui-start-claim-v3-thumb.png'} medium={'../../images/ui-start-claim-v3.png'} />
+            </GridColumn>
+            <GridColumn width={'1/3'}>
+                <ZoomImage alt="The new claim 'scaffolding' page in version 5, allowing users to see what they had already added and what was missing." small={'../../images/ui-start-claim-v5-thumb.png'} medium={'../../images/ui-start-claim-v5.png'} />
+            </GridColumn>
+        </GridRow>
         
         ### Explaining the types of funding
 
@@ -218,13 +238,23 @@ description: The page description
 
         When we tested 'non-registered professionals' against 'registered professionals', the big problem was that the primary funding pot also covers registered managers. Though they're only a small group, users told us it didn't feel appropriate that registered professionals were included within the 'non-registered' pot.
 
-        We therefore decided to carry out one final small round of testing at the end of alpha and present 2 options for the funding pot names to users, based on everything we'd learnt so far.
+        We therefore decided to carry out one final small round of testing at the end of alpha and present 2 options for the funding pot names to users, based on everything we'd learnt so far. We created these alternative start pages in version 6 of the prototype.
 
         Option A used 'Care skills funding' for the primary pot, which as an arbitrary name we could define as appropriate. 'Revalidation funding' was used for the secondary pot, a form of the name that had already tested positively.
 
         Option B used a slightly different approach by splitting the funding into 3 pots rather than 2. This allowed us to define the eligible users more precisely. We called the pots 'Non-registered direct care professionals', 'Registered managers' and 'Registered direct care professionals'.
 
-        The result was… [tbc]
+        <GridRow>
+            <GridColumn width={'1/3'}>
+                <ZoomImage alt="The top of the start screen in version 3, showing our initial attempt to describe the types of available funding." small={'../../images/ui-start-screen-v3-thumb.png'} medium={'../../images/ui-start-screen-v3.png'} />
+            </GridColumn>
+            <GridColumn width={'1/3'}>
+                <ZoomImage alt="Option A in version 6 used 2 funding pots." small={'../../images/ui-start-screen-v6a-thumb.png'} medium={'../../images/ui-start-screen-v6a.png'} />
+            </GridColumn>
+            <GridColumn width={'1/3'}>
+                <ZoomImage alt="Option B in version 6 used 3 funding pots." small={'../../images/ui-start-screen-v6a-thumb.png'} medium={'../../images/ui-start-screen-v6b.png'} />
+            </GridColumn>
+        </GridRow>
 
         ### Tension between simplicity and flexibility
 
@@ -296,6 +326,15 @@ description: The page description
         Our thinking around the statuses was driven by the need for them to be understood by users without needing explanation. The use of tabs on the manage claims screen, which users liked as they could see their claims moving from left to right through the process, also meant that we were limited by the amount of space on the screen.
 
         Insights around the 'ready to submit' status were particularly interesting. While users understood this status (representing those claims which had no missing information and were therefore ready to be submitted for processing) and felt it was useful, it did not work in practice. What we found in usability testing of version 5 of the prototype was that users were confused about when claims moved from the 'incomplete' to the 'ready to submit' status, especially as it might look as if a claim was complete when actually more learners were due to be added. This could lead to claims being submitted prematurely.
+
+        <GridRow>
+            <GridColumn width={'1/3'}>
+                <ZoomImage alt="Right back in version 1, we considered having filter options for the statuses." small={'../../images/ui-status-filter-v1-thumb.png'} medium={'../../images/ui-status-filter-v1.png'} />
+            </GridColumn>
+            <GridColumn width={'1/3'}>
+                <ZoomImage alt="By version 3 we moved to the tabbed approach to allow users to easily see the journey as claims progress through the tabs from left to right." small={'../../images/ui-status-tabs-v3-thumb.png'} medium={'../../images/ui-status-tabs-v3.png'} />
+            </GridColumn>
+        </GridRow>
 
     </GridColumn>
 

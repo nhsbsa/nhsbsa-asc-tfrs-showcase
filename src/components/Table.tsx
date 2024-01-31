@@ -15,17 +15,18 @@ interface TableProps<T extends Record<string, any> = Record<string, any>> {
 }
 
 interface TableHeaderProps {
-    children: ReactNode;
+  children: ReactNode;
 }
 
 interface TableRowProps {
-    isHeader?: boolean;
-    children: ReactNode;
+  isHeader?: boolean;
+  children: ReactNode;
 }
 
 interface TableCellProps {
-    isHeader?: boolean
-    children: ReactNode
+  isHeader?: boolean
+  width?: string
+  children: ReactNode
 }
 
 export const TableRow: React.FC<TableRowProps> = ({ isHeader = false, children }) => (isHeader ? (
@@ -46,12 +47,12 @@ export const TableHeader: React.FC<TableHeaderProps> = ({ children }) => (
   </TableRow>
 );
 
-export const TableCell: React.FC<TableCellProps> = ({ isHeader = false, children }) => (isHeader ? (
+export const TableCell: React.FC<TableCellProps> = ({ isHeader = false, width = '', children }) => (isHeader ? (
   <th role="columnheader" className="govuk-table__header" scope="col">
     {children}
   </th>
 ) : (
-  <td className="govuk-table__cell">{children}</td>
+  <td className="govuk-table__cell" width={width}>{children}</td>
 ));
 
 const Table = <T extends Record<string, any> = Record<string, any>>({
