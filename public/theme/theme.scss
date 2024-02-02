@@ -221,6 +221,18 @@ nav.in-page-nav {
   }
 }
 
+.govuk-tag {
+  &:has(+ h2) {
+    margin-top: 50px;
+  }
+  &:has(+ h3), &:has(+ h4) {
+    margin-top: 30px;
+  }
+  & + h2, & + h3, & + h4 {
+    margin-top: 10px;
+  }
+}
+
 a.link-block {
   display: block;
   position: relative;
@@ -451,6 +463,10 @@ ul.sortable-cards {
         &.sizing {
           background-color: $theme-lightest-grey;
           color: $theme-mid-grey;
+        }
+
+        & + h3 {
+          margin-top: 0;
         }
       }
     }
