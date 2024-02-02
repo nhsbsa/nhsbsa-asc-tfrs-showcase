@@ -58,7 +58,7 @@ function SigninForm({
             type="password"
             name="login"
           />
-          <input className="govuk-button" type="submit" value="Password" />
+          <input className="govuk-button" type="submit" value="Submit" />
         </form>
         {error && <p className="govuk-body govuk-error-message">{error}</p>}
       </div>

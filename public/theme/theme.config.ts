@@ -42,9 +42,9 @@ export const theme: ITheme = {
       title: 'Explore the beta backlog',
     },
     {
-      content: 'Kitchen sink',
-      link: '/kitchen-sink',
-      title: 'Get help creating content',
+      content: 'Glossary',
+      link: '/glossary',
+      title: 'View a glossary of agreed terms for this work',
     },
   ],
 };

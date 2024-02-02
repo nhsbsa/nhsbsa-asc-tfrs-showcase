@@ -3,7 +3,7 @@
     "slug": [],
     "url": "/",
     "file": "public/content/index.mdx",
-    "title": "NHS BSA Project",
+    "title": "ASC-TFRS Alpha Showcase",
     "description": "The home page description",
     "priority": "Now",
     "value": "High value",
@@ -13,6 +13,13 @@
       "High priority",
       "high value"
     ]
+  },
+  {
+    "slug": [
+      "approach"
+    ],
+    "url": "/approach",
+    "file": "public/content/approach/index.mdx"
   },
   {
     "slug": [

@@ -6,16 +6,12 @@ description: The page description
 <Heading caption='Our approach' tag='h1'>Technical overview</Heading>
 
 <GridRow>
-    <GridColumn width={'2/3'}>
-        <LeadParagraph>
-            Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.
-        </LeadParagraph>
-    </GridColumn>
     <GridColumn width={'1/3'}>
         <nav className="in-page-nav">
             #### On this page
-            * [Section one](#section-one)
-            * [Section two](#section-two)
+            * [Overview](#overview)
+            * [Technology approach](#technology-approach)
+            * [Technology standards](#technology-standards)
         </nav>
     </GridColumn>
 </GridRow>
@@ -23,15 +19,14 @@ description: The page description
 <GridRow>
 
     <GridColumn width={'full'}>
-        ## Section one
+        ## Overview
     </GridColumn>
 
     <GridColumn width={'3/4'}>
-
-        Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
-
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
-
+        The key objectives of the technical team during Alpha has been:
+            - Identify and understand potential integrations and re-use
+            - Identify technical complexity and constraints and assist with policy/product decisions
+            - Ensure a product design and a full service architecture that will be reliable and secure
     </GridColumn>
 
 </GridRow>
@@ -39,14 +34,273 @@ description: The page description
 <GridRow>
 
     <GridColumn width={'full'}>
-        ## Section two
+        ## Technology approach
     </GridColumn>
 
     <GridColumn width={'3/4'}>
+        ### Standard and principles
 
-        Cras mattis consectetur purus sit amet fermentum. Nullam quis risus eget urna mollis ornare vel eu leo. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Nullam id dolor id nibh ultricies vehicula ut id elit. Aenean lacinia bibendum nulla sed consectetur.
+        The service will follow internal NHSBSA, wider government and industry led standards throughout. 
 
-        Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Maecenas faucibus mollis interdum. Donec ullamcorper nulla non metus auctor fringilla. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus.
+        Internal NHSBSA
+
+        - [NHSBSA Digital, Data and Technology Playbook](/uri "https://nhsbsa.github.io/nhsbsa-digital-playbook/")
+        
+        NHS and Government
+        - [NHS Technology Standards](/uri "https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/nhs-digital-data-and-technology-standards")
+        - [Government Service Standards](/uri "https://www.gov.uk/service-manual/service-standard")
+        - [Government Technology Code of Practice](/uri "https://www.gov.uk/guidance/the-technology-code-of-practice")
+        - [Government Cloud First Policy](/uri "https://www.gov.uk/guidance/government-cloud-first-policy")
+        - [National Cyber Security Centre Cloud Principles](/uri "https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles")
+        - [Government standard around making the Technology sustainable](/uri "https://www.gov.uk/guidance/make-your-technology-sustainable")
+
+        Industry
+        - [AWS Well Architected Framework](/uri "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html")
+        - [OWASP Top 10 Security Risks](/uri "https://owasp.org/www-project-top-ten/")
+
+        ### Technology overview
+        <Table>
+            <TableHeader>
+            <TableCell>Consideration</TableCell><TableCell>Related Principle/Standard</TableCell>
+            </TableHeader>
+        <TableRow>
+            <TableCell>Hosted by Amazon Web Services</TableCell><TableCell>Gov Public Cloud First Policy</TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Creating a new End-to-end seamless and integrated Digital Service</TableCell><TableCell>Gov Design Principle of “Designing Services Not Websites”</TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Internet-facing fully accessible web portal to View, submit and manage claims and a web portal to allow internal NHSBSA staff to process and manage claims.</TableCell><TableCell>Gov Principle of “This is for Everyone”</TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Asynchronous services</TableCell><TableCell>AWS Well-Architected – Performance Pillar and NHS Technology Standard of enabling infrastructure that supports technical evolution, financial investment and resilience</TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Implemented in Node.JS using Open-Source components</TableCell><TableCell>Gov Design Principle of Make Things Open</TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Reusing NHSBSA Finance and File Storage services</TableCell><TableCell>Leveraged BSA Common components where appropriate</TableCell>
+        </TableRow>
+        </Table>
+
+        ### Component overview
+        <ZoomImage alt="Persona 2: An administrator in a medium-sized care provider." small={'../../images/component-diagram.png'} medium={'../../images/component-diagram.png'} />
+
+    </GridColumn>
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Technology standards
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        ### 9. Create a secure service which protects users’ privacy
+
+        #### NCSC Cloud Security Principles
+        - External Interface Protection using WAF’s, DoS Protection, and Proxies.
+        - Protect Users Personal Identifiable Information with Encryption as Standard in Transit and at Rest at all times.
+        - Protect Assets using Defense in Depth using Security Groups and Subnets.
+        - Secure Operation User Management with Identity Access Management and Audited Access.
+        - Understanding Our Suppliers Risks with Supplier Security Management.
+        - Always being on guard to new Threats with Continuous Threat Detection and Management.
+        - Supply Chain Vulnerability management including CVE container image scanning in GiLab
+
+        #### Identity Access Management (including authentication)
+        - Authentication of the claim service with be provided by Azure Active Directory B2C. 
+        - Authentication of the processing and customer contact centre service will be provided by Azure Active Directory (Microsoft Entra)
+        - Multi-Factor Authentication (MFA), will be required for both the internal and external services. 
+
+        #### Regular IT Health-checks
+        - External IT Health-checks will be conducted before going live and annually thereafter. Adhoc health checks will also be conducted  following significant service changes.
+
+        #### Threat Modelling
+        <Table>
+            <TableHeader>
+            <TableCell>Threat</TableCell><TableCell>Mitigations</TableCell>
+            </TableHeader>
+        <TableRow>
+            <TableCell>**Spoofing**\
+            Someone completing a claim on behalf of an organisation they are not part of.</TableCell>
+            <TableCell>
+            </TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>**Spoofing**\
+            Someone completing a claim on behalf of an organisation that does not exist</TableCell>
+            <TableCell>
+            - Registration of organisations will be checked against the WDS dataset to ensure the organisation is valid and up to date
+            </TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>**Spoofing**\
+            Someone completing a claim after providing personal bank details</TableCell>
+            <TableCell> 
+            - RBAC in the Claims web app will limit the changing of bank details to the administrator of a give ASC Workplace
+            - Payments within the NHSBSA Integra system will be subject to manual verification on 10% payments
+            </TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>**Spoofing**\
+            Someone completing a claim for staff who did not complete training</TableCell>
+            <TableCell>
+            - Claims will be audited, stored securely with relevant retention policies. Manual checks with be conducted on 10% of claims
+            </TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>**Repudiation**\
+            Someone disputing the details of a claim they submitted</TableCell>
+            <TableCell>
+            - Claims will be audited, stored securely with relevant retention policies
+            </TableCell>
+        </TableRow>
+         <TableRow>
+            <TableCell>**Information Disclosure**\
+            Someone gets access to application data that they should not see</TableCell>
+            <TableCell>
+            - RBAC Implemented leveraging Azure B2C within the claim application
+            </TableCell>
+        </TableRow>
+         <TableRow>
+            <TableCell>**DoS**\
+            Someone attempts to bring the service down by over- serving requests</TableCell>
+            <TableCell>
+            - AWS WAF in place and DDoS protection enabled
+            - Service deployed in multiple availability zones to allow switch-over if required
+            </TableCell>
+        </TableRow>
+         <TableRow>
+            <TableCell>**Elevation of Privilege**\
+            Someone gets access to application data that they should not see</TableCell>
+            <TableCell>
+            - Defence in depth using Security Groups and Subnets
+            - Identity Access Management and Audited Access
+            </TableCell>
+        </TableRow>
+        </Table>
+
+        ### 11. Choose the right tools and technology
+        <Table>
+        <TableRow>
+            <TableCell>Platforms</TableCell>
+            <TableCell>
+            - AWS
+            </TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Code</TableCell>
+            <TableCell>
+            - nodeJS
+            - ts
+            - Terraform
+            </TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Compute/Scalability</TableCell>
+            <TableCell>
+            - AWS Lambda
+            - Docker
+            - AWS Fargate 
+            </TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Integration</TableCell>
+            <TableCell>
+            - New Skills for Care ASC WDS Api
+            - CDC Api (tbc)
+            </TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Cache</TableCell>
+            <TableCell>
+            - Amazon Elasticache
+            - redis
+            </TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Data Storage</TableCell>
+            <TableCell>
+            - Aurora PostgreSQL
+            </TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Testing</TableCell>
+            <TableCell>
+            - Selenium
+            </TableCell>
+        </TableRow>
+         <TableRow>
+            <TableCell>Common Components / Patterns</TableCell>
+            <TableCell>
+            - NHSBSA Bank Checker
+            - NHSBSA File Service
+            - GOV.UK Notify (post mvp)
+            </TableCell>
+        </TableRow>
+        </Table>
+
+        ### 12. Make new source code open
+        We will conduct a thorough vulnerability assessment of the code in compliance with the well-established NHSBSA Open-Source policy before making any repositories available publicly.
+
+        We are will take the following steps to ensure any public code can be hosted on the NHSBSA Gitlab instance:
+
+        - Scanning existing repositories to detect any potential data leaks.
+        - Implementing GitLeaks as a pre-commit hook to prevent the accidental inclusion of secrets in our commits.
+        - Documented process to address and remediating vulnerabilities found within the codebase.
+
+        The risk assessment will take into account the integration with the NHSBSA Finance product Integra.
+
+         ### 13. Use and contribute to open standards, common components and patterns
+
+        #### Technology considerations
+        - Hosted by Amazon Web Services (Public Cloud First Policy)
+        - Builds to provide end-to-end, seamless and integrated Digital Service (GDS Design Principle of Designing Services Not Websites)
+        - Internet-facing accessible web portal to View/Submit/Edit MCCD (GDS Principle of This is for Everyone)
+        - Asynchronous services (AWS Well-Architected – Performance Pillar and NHS Technology Standard of enabling infrastructure that supports technical evolution, financial investment and resilience)
+        - Implement in Node.js using Open-Source components (GDS Principle of Make Things Open)
+        - Reuse existing services (Leveraged NHSBSA Common components where appropriate)
+            - NHSBSA File Service
+            - NHSBSA Finance Service
+            - NHSBSA Workflow manager
+
+        #### Open-source design
+        Prototype code files are all stored on the NHSBSA GitHub space
+
+        ### 14. Operate a reliable service
+
+        #### Quality Assurance
+        The focus of the Alpha was shifting assurance/governance left and producing a service architecture that was readily testable. During Beta, a test lead and automated testers will be embedded in the team from initial development. The following will be carried out:
+        - Automated Testing (Cucumber Serenity)
+            - Functional Testing
+            - Integration Testing
+            - Regression Testing
+        - Manual Testing
+            - Exploratory Testing
+            - Usability Testing
+            - Smoke testing with predefined test cases
+        - Performance Testing (JMeter)
+            - Bottleneck Identification
+            - Scalability Assessment
+            - Capacity Planning
+            - Load and stress testing
+        - External Assurance
+            - DAC Accessibility Audit
+            - IT Health Check
+
+        #### High availability and fault tolerant service
+        We will do the following to make sure our service is both highly available and fault-tolerant:
+        - **Utilise AWS Cloud Services**: We have leveraged AWS's high availability and fault-tolerant infrastructure to ensure that our service is always available to our users.
+        - **Use Multiple AZs**: We have deployed our resources across multiple AWS Availability Zones (AZs) within a region. This ensures that if one or more AZs experience downtime, our services will remain available.
+        - **Data Backup**: We will also have backup strategies in place to ensure that data is protected, and we can quickly restore our services in the event of data loss.
+
+        #### Disaster Recovery
+        Disaster Recovery process and database restoration will be automated, documented and tested regularly. 
+
+        #### Observability and monitoring
+        We will use Datadog and AWS CloudWatch to monitor our resources and detect anomalies before they become major issues. We will set up notifications to alert us of potential issues so that we can act before they impact our services.
+
+
 
     </GridColumn>
 
@@ -59,7 +313,7 @@ description: The page description
 </GridRow>
 <GridRow>
     <GridColumn width={'1/2'}>
-        <LinkBlock style="prev" url="/approach/data" title="Our approach" text="Data overview" />
+        <LinkBlock style="prev" url="/approach/team-and-wow" title="Our approach" text="How we worked" />
     </GridColumn>
     <GridColumn width={'1/2'}>
         <LinkBlock style="next" url="/approach/design" title="Our approach" text="Design overview" />
