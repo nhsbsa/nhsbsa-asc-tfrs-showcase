@@ -93,20 +93,10 @@
   {
     "slug": [
       "assumptions",
-      "assumption-3"
+      "assumptions-overview"
     ],
-    "url": "/assumptions/assumption-3",
-    "file": "public/content/assumptions/assumption-3.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
-    "description": "The home page description"
-  },
-  {
-    "slug": [
-      "assumptions",
-      "assumption-4"
-    ],
-    "url": "/assumptions/assumption-4",
-    "file": "public/content/assumptions/assumption-4.mdx",
+    "url": "/assumptions/assumptions-overview",
+    "file": "public/content/assumptions/assumptions-overview.mdx",
     "title": "NHS BSA Project | Hippo Digital",
     "description": "The home page description"
   },
