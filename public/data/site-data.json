@@ -44,6 +44,16 @@
   {
     "slug": [
       "approach",
+      "service-blueprints-from-alpha"
+    ],
+    "url": "/approach/service-blueprints-from-alpha",
+    "file": "public/content/approach/service-blueprints-from-alpha.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "approach",
       "team-and-wow"
     ],
     "url": "/approach/team-and-wow",
