@@ -341,6 +341,16 @@
   {
     "slug": [
       "understanding",
+      "service-blueprint-from-discovery"
+    ],
+    "url": "/understanding/service-blueprint-from-discovery",
+    "file": "public/content/understanding/service-blueprint-from-discovery.mdx",
+    "title": "NHS BSA Project | Hippo Digital",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "understanding",
       "users"
     ],
     "url": "/understanding/users",
