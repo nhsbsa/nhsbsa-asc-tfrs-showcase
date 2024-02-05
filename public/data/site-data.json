@@ -16,29 +16,12 @@
   },
   {
     "slug": [
-      "approach"
-    ],
-    "url": "/approach",
-    "file": "public/content/approach/index.mdx"
-  },
-  {
-    "slug": [
-      "approach",
-      "data"
-    ],
-    "url": "/approach/data",
-    "file": "public/content/approach/data.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
-    "description": "The page description"
-  },
-  {
-    "slug": [
       "approach",
       "design"
     ],
     "url": "/approach/design",
     "file": "public/content/approach/design.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Design overview | ASC-TFRS Alpha Showcase",
     "description": "The page description"
   },
   {
@@ -48,7 +31,7 @@
     ],
     "url": "/approach/service-blueprints-from-alpha",
     "file": "public/content/approach/service-blueprints-from-alpha.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Service blueprints from alpha | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -58,7 +41,7 @@
     ],
     "url": "/approach/team-and-wow",
     "file": "public/content/approach/team-and-wow.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Team shape and ways of working | ASC-TFRS Alpha Showcase",
     "description": "The team page description"
   },
   {
@@ -68,7 +51,7 @@
     ],
     "url": "/approach/technical",
     "file": "public/content/approach/technical.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Technical overview | ASC-TFRS Alpha Showcase",
     "description": "The page description"
   },
   {
@@ -77,7 +60,7 @@
     ],
     "url": "/artefact-archive",
     "file": "public/content/artefact-archive.mdx",
-    "title": "Artefact archive",
+    "title": "Artefact archive | ASC-TFRS Alpha Showcase",
     "description": "Artefact archive"
   },
   {
@@ -87,7 +70,7 @@
     ],
     "url": "/assumptions/assumption-1",
     "file": "public/content/assumptions/assumption-1.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Assumption 1 | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -97,7 +80,7 @@
     ],
     "url": "/assumptions/assumption-2",
     "file": "public/content/assumptions/assumption-2.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Assumption 2 | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -107,7 +90,7 @@
     ],
     "url": "/assumptions/assumptions-overview",
     "file": "public/content/assumptions/assumptions-overview.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Assumptiopns overview | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -221,7 +204,7 @@
     ],
     "url": "/beta/planning",
     "file": "public/content/beta/planning.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Beta planning | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -231,7 +214,7 @@
     ],
     "url": "/beta/recommendations",
     "file": "public/content/beta/recommendations.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Reccomendations | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -241,20 +224,8 @@
     ],
     "url": "/beta/service-performance",
     "file": "public/content/beta/service-performance.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Measuring performance | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
-  },
-  {
-    "slug": [
-      "data-test"
-    ],
-    "url": "/data-test",
-    "file": "public/content/data-test.mdx",
-    "title": "Data Test",
-    "tags": [
-      "Medium priority",
-      "High value"
-    ]
   },
   {
     "slug": [
@@ -305,7 +276,7 @@
     ],
     "url": "/understanding/context",
     "file": "public/content/understanding/context.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Context and policy overview | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -315,7 +286,7 @@
     ],
     "url": "/understanding/glossary",
     "file": "public/content/understanding/glossary.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Glossary | ASC-TFRS Alpha Showcase",
     "description": "Glossary of frequently used acronyms and terms"
   },
   {
@@ -325,7 +296,7 @@
     ],
     "url": "/understanding/naming",
     "file": "public/content/understanding/naming.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Naming the service | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -335,7 +306,7 @@
     ],
     "url": "/understanding/problem",
     "file": "public/content/understanding/problem.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "The problem | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -345,7 +316,7 @@
     ],
     "url": "/understanding/research",
     "file": "public/content/understanding/research.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Our research approach | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -355,7 +326,7 @@
     ],
     "url": "/understanding/service-blueprint-from-discovery",
     "file": "public/content/understanding/service-blueprint-from-discovery.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Service blueprint from discovery | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -365,7 +336,7 @@
     ],
     "url": "/understanding/users",
     "file": "public/content/understanding/users.mdx",
-    "title": "NHS BSA Project | Hippo Digital",
+    "title": "Our users and their needs | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   }
 ]

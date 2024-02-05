@@ -43,7 +43,7 @@ export const theme: ITheme = {
     },
     {
       content: 'Glossary',
-      link: '/glossary',
+      link: '/understanding/glossary',
       title: 'View a glossary of agreed terms for this work',
     },
   ],
