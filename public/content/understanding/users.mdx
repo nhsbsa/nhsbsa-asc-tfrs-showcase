@@ -8,12 +8,13 @@ description: The home page description
 <GridRow>
     <GridColumn width={'2/3'}>
         <LeadParagraph>
-            Using findings and analysis from user research, we have explored our users' needs and attitudes towards the service. We have presented these as user needs and mindsets, ensuring that we keep these at the forefront of all aspects of design.
+            Using findings and analysis from user research, we have explored our users' needs and attitudes towards the service. We have presented these as user needs and personas, ensuring that we keep these at the forefront of all aspects of design.
         </LeadParagraph>
     </GridColumn>
     <GridColumn width={'1/3'}>
         <nav className="in-page-nav">
             #### On this page
+            * [Our users](#our-users)
             * [User needs](#user-needs)
             * [Personas](#personas)
         </nav>
@@ -23,10 +24,27 @@ description: The home page description
 <GridRow>
 
     <GridColumn width={'full'}>
+        ## Our users
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+    At the highest level we have divided our users into two distinct groups:
+    - **Submitters** - these are the individuals who will be using our service to submit claims for reimbursement. In smaller providers, this will often be the sole general administrator, for whom this is simply one task for them to complete alongside many others. In larger organisations, this will likely be someone working within a dedicated Learning and Development (L&D) team, who is quite experienced completing tasks like this and may well have considerable experience using schemes like the Workforce Development Fund (WDF).
+    - **Processors** - these are the internal operational NHS BSA staff who will be receiving the claims submitted by the Submitters, verifying the details, and assuming everything is in order, processing the payment. 
+    
+    During the Alpha phase we have conducted research with both sets of users, although our focus has been primarily on the Submitters. 
+    
+    We have also discussed a third group - **Learners**. These are individuals who will themselves actually be attending the training, doing the revalidation activities, etc. However as they will not be directly interacting with the service we have not prioritised research with this group.
+
+    </GridColumn>
+
+    <GridColumn width={'full'}>
         ## User needs
     </GridColumn>
 
     <GridColumn width={'3/4'}>
+        After our mini-discovery we created a set of high-level user needs. These have subsequently been revised to reflect what we have observed throughout our three rounds of usability testing.
+        
         ### User need 1
         As a submitter, I need to be able to manage (or switch between) CPD and TU claims so that I can submit claims efficiently.
 
@@ -61,13 +79,16 @@ description: The home page description
     </GridColumn>
 
     <GridColumn width={'3/4'}>
-        We have developed personas to represent our users and their unique challenges.
+        We have developed personas to represent our users and their unique challenges. After lengthy consideration we felt that personas, rather than mindsets, were the most appropriate tool for representing the needs, behaviours and attitudes of our users. In particular we felt it necessary to capture the ways in which the challenges faced by Submitters in smaller organisations were markedly different from those faced in larger organisations.
 
         ### Persona 1
         <ZoomImage alt="Persona 1: An administrator in a small care provider." small={'../../images/persona-1.png'} medium={'../../images/persona-1.png'} />
         
         ### Persona 2
         <ZoomImage alt="Persona 2: An administrator in a medium-sized care provider." small={'../../images/persona-2.png'} medium={'../../images/persona-2.png'} />
+
+        ### Persona 3
+        <ZoomImage alt="Persona 3: An administrator in a large care provider." small={'../../images/persona-3.png'} medium={'../../images/persona-3.png'} />
 
     </GridColumn>
 
