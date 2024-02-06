@@ -65,6 +65,15 @@
   },
   {
     "slug": [
+      "assessment-support"
+    ],
+    "url": "/assessment-support",
+    "file": "public/content/assessment-support.mdx",
+    "title": "Assessment Support | ASC-TFRS Alpha Showcase",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
       "assumptions",
       "assumption-1"
     ],

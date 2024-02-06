@@ -46,6 +46,11 @@ export const theme: ITheme = {
       link: '/understanding/glossary',
       title: 'View a glossary of agreed terms for this work',
     },
+    {
+      content: 'Assessment Support',
+      link: '/assessment-support',
+      title: 'A supporting page for assessment introduction',
+    },
   ],
 };
 
