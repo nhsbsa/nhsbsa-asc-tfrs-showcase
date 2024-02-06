@@ -97,12 +97,6 @@ img.modal-img {
   }
 }
 
-/* PROFILE IMAGE */
-img.team-thumbnail {
-  max-width: 90%;
-  border-radius: 50%;
-}
-
 /* HTML & GOV OVERRIDES */
 html {
   scroll-behavior: smooth;
@@ -402,8 +396,11 @@ div.person-profile {
   }
 
   img {
-    width: 100px;
+    width: 160px;
     height: auto;
+    max-width: 80%;
+    border-radius: 50%;
+    border: 1px solid $theme-light-grey;
   }
 
   ul {
