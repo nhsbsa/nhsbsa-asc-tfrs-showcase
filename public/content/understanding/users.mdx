@@ -44,29 +44,37 @@ description: The home page description
 
     <GridColumn width={'3/4'}>
         After our mini-discovery we created a set of high-level user needs. These have subsequently been revised to reflect what we have observed throughout our three rounds of usability testing.
-        
-        ### User need 1
+
+        <Tag text="User need 1" colour="green" />
+        ### Switch between CPD and TU claims
         As a submitter, I need to be able to manage (or switch between) CPD and TU claims so that I can submit claims efficiently.
 
-        ### User need 2
+        <Tag text="User need 2" colour="green" />
+        ### Save progress
         As a submitter, I need to be able to save my progress so that I can return to it later (for example when I have proof of completion).
 
-        ### User need 3
+        <Tag text="User need 3" colour="green" />
+        ### Upload claim evidence
         As a submitter, I need to easily upload claim evidence without the need to duplicate/resubmit so that I don't waste time and can focus on my most important duties.
 
-        ### User need 4
+        <Tag text="User need 4" colour="green" />
+        ### Easy-to-follow guidance
         As an ASC provider, I need clear, easy-to-follow guidance so that I can understand who/what is eligible, what to submit and when, and know when I will receive reimbursement.
 
-        ### User need 5
-        As an ASC provider, I need flexibility in who can start, edit, or submit a claim for my organization so that I don't have to worry about effort being lost due to unplanned work absence.
+        <Tag text="User need 5" colour="green" />
+        ### Organisational flexibility
+        As an ASC provider, I need flexibility in who can start, edit, or submit a claim for my organisation so that I don't have to worry about effort being lost due to unplanned work absence.
 
-        ### User need 6
+        <Tag text="User need 6" colour="green" />
+        ### Manage claims and budgets
         As an ASC provider, I need to see what we've already claimed for and how much budget we have left so that we can claim all the money that we are eligible for.
 
-        ### User need 7
+        <Tag text="User need 7" colour="green" />
+        ### Anticipate payments
         As a small ASC provider, I need to see approximately when we can expect to be paid so that I am able to manage my budget effectively.
 
-        ### User need 8
+        <Tag text="User need 8" colour="green" />
+        ### Uniquely identify learners
         As a large ASC provider, I need a way to uniquely identify learners in the service when I may not have unique identifiers myself (e.g., no HR system) so that I don't claim for the wrong learner (e.g., two people with the same name).
     </GridColumn>
 
@@ -79,17 +87,310 @@ description: The home page description
     </GridColumn>
 
     <GridColumn width={'3/4'}>
-        We have developed personas to represent our users and their unique challenges. After lengthy consideration we felt that personas, rather than mindsets, were the most appropriate tool for representing the needs, behaviours and attitudes of our users. In particular we felt it necessary to capture the ways in which the challenges faced by Submitters in smaller organisations were markedly different from those faced in larger organisations.
-
-        ### Persona 1
-        <ZoomImage alt="Persona 1: An administrator in a small care provider." small={'../../images/persona-1.png'} medium={'../../images/persona-1.png'} />
+        We have developed personas to represent our users and their unique challenges. After lengthy consideration we felt that personas, rather than mindsets, were the most appropriate tool for representing the needs, behaviours and attitudes of our users.
         
-        ### Persona 2
-        <ZoomImage alt="Persona 2: An administrator in a medium-sized care provider." small={'../../images/persona-2.png'} medium={'../../images/persona-2.png'} />
+        In particular we felt it necessary to capture the ways in which the challenges faced by Submitters in smaller organisations were markedly different from those faced in larger organisations.
 
-        ### Persona 3
-        <ZoomImage alt="Persona 3: An administrator in a large care provider." small={'../../images/persona-3.png'} medium={'../../images/persona-3.png'} />
+        <Tag text="Persona 1" colour="green" />
+        ### An administrator in a small care provider
 
+        <Details title={'Read more'}>
+            <Table>
+                <TableRow>
+                    <TableCell width="20%">![Generic person](/images/persona-me.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### About me
+                        I work in a small care provider which provides care services. My organisation usually works in a small environment like a care home for elderly people, but sometimes organisations like mine have multiple sites.
+
+                        I'm the only person who does my role, but sometimes I get helped out by other people
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![Person's head filled with thoughts](/images/persona-attitudes.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Attitudes towards learning and development
+                        As a small care provider, my organisation often funds our own training, so we have to be careful about sending people on training
+
+                        I don't have a lot of time to spend on onerous administrative processes, so sometimes I avoid making WDF claims to save time, even if I might get extra money back
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![Person imagining a graph going up over time](/images/persona-expectations.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Expectations of the service
+                        I'm worried that submitting reimbursement claims in a new service might take a long time to do. As we're a small provider, cash flow is important to us, so we need to receive payment quickly
+
+                        I'm familiar with the WDF, but I don't always use it because it's hard to create claims
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![2 hands holding each other](/images/persona-support.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Support needs
+                        I need support to understand what's eligible, so I can quickly decide whether a claim is viable or not
+
+                        Because it's a small organisation, I often know our learners and training providers quite well, which might make it easier to complete claims. I know where all our evidence is saved, so I won't need much support here
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![A hand holding 3 unknown items](/images/persona-needs.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### User needs
+                        
+                        - As an ASC provider I need clear, easy to follow guidance, so that I can understand who/what is eligible, what to submit and when, and know when I will receive reimbursement
+                        - As an ASC provider, I need flexibility in who can start, edit or submit a claim for my organisation, so that I don't have to worry about effort being lost due to unplanned work absence
+                        - As an ASC provider. I need to see what we've already claimed for and how much budget we have left, so we can effectively take advantage of the TRFS
+                        - As a small employer, I need to see approximately when we can expect to be paid, so that I am able to manage my budget effectively
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![A computer screen with a paintbrush](/images/persona-design.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Implications for design
+                        
+                        - I need a clear guidance on which courses are eligible
+                        - I need a easy-to-use way of tracking claims and payments
+                        - I need a system that can be picked up and put down if I get called away
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![2 hands, one thumbs up and one thumbs down](/images/persona-likelihood.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Likelihood of using the service
+                        <img src="/images/persona-star.png"></img>
+                        <img src="/images/persona-star.png"></img>
+                        <img src="/images/persona-star.png"></img>
+                    </TableCell>
+                </TableRow>
+            </Table>
+        </Details>
+        
+        <Tag text="Persona 2" colour="green" />
+        ### An administrator in a medium-sized care provider
+
+        <Details title={'Read more'}>
+            <Table>
+                <TableRow>
+                    <TableCell width="20%">![Generic person](/images/persona-me.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### About me
+                            I work in a medium-sized care provider which provides care services. Some organisations this size provider multiple types of care, but others focus just on one group, like residential homes for adults with learning disabilities.
+
+                            I work in a small team - it's not just me who provides admin support for L&D. Line managers also help out, by recording and tracking training needs and course attendance.
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![Person's head filled with thoughts](/images/persona-attitudes.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Attitudes towards learning and development
+                            As a medium-sized care provider, my organisation provides internal training, delivered by our own teams. We don't often use external providers, except when we need specialist help. Training is based around the needs of service users.
+
+                            Some organisations like ours use an e-learning platform, especially for mandatory training. We like using this as it makes it easier to ensure training is complete. It's hard to backfill roles when people are away.
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![Person imagining a graph going up over time](/images/persona-expectations.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Expectations of the service
+                            The WDF isn't that useful to us at the moment - how will this service be an improvement?
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![2 hands holding each other](/images/persona-support.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Support needs
+                            As we have lots of different teams, local managers identify and track training for their employees, and we collate the results centrally. This means that sometimes we don't always have copies of their evidence.
+
+                            There's a few of us in the team, so it's important for me to see what other claims have been started, and by whom.
+
+                            All our new staff take training when they onboard, so I might need to add multiple people or courses at the same time.
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![A hand holding 3 unknown items](/images/persona-needs.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### User needs
+                        
+                            - As an ASC provider I need clear, easy to follow guidance, so that I can understand who/what is eligible, what to submit and when, and know when I will receive reimbursement
+                            - As an ASC provider, I need flexibility in who can start, edit or submit a claim for my organisation, so that I don't have to worry about effort being lost due to unplanned work absence
+                            - As an ASC provider. I need to see what we've already claimed for and how much budget we have left, so we can effectively take advantage of the TRFS
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![A computer screen with a paintbrush](/images/persona-design.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Implications for design
+                        
+                            - I already use multiple systems to track training, so I need to understand the benefits of using this one as well.
+                            - I need to be able to clearly differentiate between employees as I might not be familiar with them individually.
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![2 hands, one thumbs up and one thumbs down](/images/persona-likelihood.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Likelihood of using the service
+                        <img src="/images/persona-star.png"></img>
+                        <img src="/images/persona-star.png"></img>
+                    </TableCell>
+                </TableRow>
+            </Table>
+        </Details>
+        
+        <Tag text="Persona 3" colour="green" />
+        ### An administrator in a large care provider
+
+        <Details title={'Read more'}>
+            <Table>
+                <TableRow>
+                    <TableCell width="20%">![Generic person](/images/persona-me.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### About me
+                            I work in a large care provider. We provide various types of care, including residential homes for elderly individuals and other facilities looking after adults with learning disabilities.
+
+                            In our organisation there are multiple office-based teams - HR, finance, learning and development (L&D). I work in the L&D team. There are 6 of us and we're responsible for organising and tracking L&D, and ensuring we're compliant with CQC regulations.
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![Person's head filled with thoughts](/images/persona-attitudes.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Attitudes towards learning and development
+                            My organisation provides mostly internal training, delivered by our own facilitators. We don't often use external providers, although we do when we need specialist training. Backfilling for training is not usually a big barrier for us, as we're able to move people around as and when needed.
+
+                            We are though keen to get value for money and take advantage of schemes such as this and the WDF. We would look to take advantage as much as possible.
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![Person imagining a graph going up over time](/images/persona-expectations.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Expectations of the service
+                            We use the WDF, although it forms a relatively small part of our training budget - most of our training is in-house. We would likely treat this similarly. It would be nice to be able to easily identify which training is eligible.
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![2 hands holding each other](/images/persona-support.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Support needs
+                            We're a large organisation with many people joining and leaving every month. We also have a wide range of roles being performed within the organisation. Being able to input and manage that information in a time-efficient way is a must.
+
+                            There's a few of us in the team, so it's important for me to see what other claims have been started, and by whom.
+
+                            All our new staff take training when they onboard, so I might need to add multiple people or courses at the same time.
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![A hand holding 3 unknown items](/images/persona-needs.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### User needs
+                        
+                            - As an ASC provider I need clear, easy to follow guidance, so that I can understand who/what is eligible, what to submit and when, and know when I will receive reimbursement
+                            - As an ASC provider, I need flexibility in who can start, edit or submit a claim for my organisation, so that I don't have to worry about effort being lost due to unplanned work absence
+                            - As an ASC provider. I need to see what we've already claimed for and how much budget we have left, so we can effectively take advantage of the TRFS
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![A computer screen with a paintbrush](/images/persona-design.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Implications for design
+                        
+                            - As I work as part of an L&D team, I need to be able to start a claim and have a colleague of mine be able to complete it, and vice versa.
+                            - I need to be able to clearly differentiate between employees as I might not be familiar with them individually. We have staff members with identical names.
+                            - Given the number of staff we deal with, some sort of bulk upload would be very helpful.
+                            - I'd like to track how much remaining budget we have left so that we can maximise how much funding we receive each financial year.
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![2 hands, one thumbs up and one thumbs down](/images/persona-likelihood.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Likelihood of using the service
+                        <img src="/images/persona-star.png"></img>
+                        <img src="/images/persona-star.png"></img>
+                        <img src="/images/persona-star.png"></img>
+                    </TableCell>
+                </TableRow>
+            </Table>
+        </Details>
+        
+        <Tag text="Persona 4" colour="green" />
+        ### An NHSBSA processor
+
+        <Details title={'Read more'}>
+            <Table>
+                <TableRow>
+                    <TableCell width="20%">![Generic person](/images/persona-me.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### About me
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![Person's head filled with thoughts](/images/persona-attitudes.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Attitudes towards learning and development
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![Person imagining a graph going up over time](/images/persona-expectations.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Expectations of the service
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![2 hands holding each other](/images/persona-support.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Support needs
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![A hand holding 3 unknown items](/images/persona-needs.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### User needs
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![A computer screen with a paintbrush](/images/persona-design.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Implications for design
+                    </TableCell>
+                </TableRow>
+                <TableRow>
+                    <TableCell width="20%">![2 hands, one thumbs up and one thumbs down](/images/persona-likelihood.png)</TableCell>
+                    <TableCell width="5%"></TableCell>
+                    <TableCell width="75%">
+                        #### Likelihood of using the service
+                        <img src="/images/persona-star.png"></img>
+                        <img src="/images/persona-star.png"></img>
+                        <img src="/images/persona-star.png"></img>
+                    </TableCell>
+                </TableRow>
+            </Table>
+        </Details>
+        
     </GridColumn>
 
 </GridRow>
