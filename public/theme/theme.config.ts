@@ -5,7 +5,7 @@ export const theme: ITheme = {
   name: 'Alpha Assessment',
   orgName: 'NHS Business Service Authority',
   departmentName: 'Adult Social Care',
-  serviceName: 'Training Fund Reimbursement Service',
+  serviceName: 'Training Fund Reimbursement Scheme',
   logo: {
     src: '/theme/images/logo.svg',
     height: 48,
