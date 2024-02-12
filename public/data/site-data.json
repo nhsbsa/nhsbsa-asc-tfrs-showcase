@@ -17,21 +17,11 @@
   {
     "slug": [
       "approach",
-      "design"
+      "assumptions"
     ],
-    "url": "/approach/design",
-    "file": "public/content/approach/design.mdx",
-    "title": "Design overview | ASC-TFRS Alpha Showcase",
-    "description": "The page description"
-  },
-  {
-    "slug": [
-      "approach",
-      "service-blueprints-from-alpha"
-    ],
-    "url": "/approach/service-blueprints-from-alpha",
-    "file": "public/content/approach/service-blueprints-from-alpha.mdx",
-    "title": "Service blueprints from alpha | ASC-TFRS Alpha Showcase",
+    "url": "/approach/assumptions",
+    "file": "public/content/approach/assumptions.mdx",
+    "title": "Assumptions overview | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -43,16 +33,6 @@
     "file": "public/content/approach/team-and-wow.mdx",
     "title": "Team shape and ways of working | ASC-TFRS Alpha Showcase",
     "description": "The team page description"
-  },
-  {
-    "slug": [
-      "approach",
-      "technical"
-    ],
-    "url": "/approach/technical",
-    "file": "public/content/approach/technical.mdx",
-    "title": "Technical overview | ASC-TFRS Alpha Showcase",
-    "description": "The page description"
   },
   {
     "slug": [
@@ -94,16 +74,6 @@
   },
   {
     "slug": [
-      "assumptions",
-      "assumptions-overview"
-    ],
-    "url": "/assumptions/assumptions-overview",
-    "file": "public/content/assumptions/assumptions-overview.mdx",
-    "title": "Assumptions overview | ASC-TFRS Alpha Showcase",
-    "description": "The home page description"
-  },
-  {
-    "slug": [
       "beta-backlog"
     ],
     "url": "/beta-backlog",
@@ -114,97 +84,6 @@
     "value": null,
     "complexity": null,
     "breadcrumbs": null
-  },
-  {
-    "slug": [
-      "beta-backlog",
-      "01"
-    ],
-    "url": "/beta-backlog/01",
-    "file": "public/content/beta-backlog/01.mdx",
-    "title": "01. Pull data into one place",
-    "description": "Collating all data into a single point of reference",
-    "priority": "later",
-    "value": "High Value",
-    "complexity": "low complexity",
-    "product": "Leavers",
-    "breadcrumbs": null
-  },
-  {
-    "slug": [
-      "beta-backlog",
-      "02"
-    ],
-    "url": "/beta-backlog/02",
-    "file": "public/content/beta-backlog/02.mdx",
-    "title": "02 Title",
-    "description": "Collating all data into a single point of reference",
-    "priority": "next",
-    "value": "High value",
-    "complexity": "High complexity",
-    "product": "Leavers",
-    "layout": null,
-    "breadcrumbs": [
-      "Home, /",
-      "Features, /features"
-    ]
-  },
-  {
-    "slug": [
-      "beta-backlog",
-      "03"
-    ],
-    "url": "/beta-backlog/03",
-    "file": "public/content/beta-backlog/03.mdx",
-    "title": "03 Title",
-    "description": "Collating all data into a single point of reference",
-    "priority": "next",
-    "value": "High value",
-    "complexity": "High complexity",
-    "product": "Leavers",
-    "layout": null,
-    "breadcrumbs": [
-      "Home, /",
-      "Features, /features"
-    ]
-  },
-  {
-    "slug": [
-      "beta-backlog",
-      "04"
-    ],
-    "url": "/beta-backlog/04",
-    "file": "public/content/beta-backlog/04.mdx",
-    "title": "04 Title",
-    "description": "Collating all data into a single point of reference",
-    "priority": "Now",
-    "value": "High value",
-    "complexity": "MEDIUM COMPLEXITY",
-    "product": "Leavers",
-    "layout": null,
-    "breadcrumbs": [
-      "Home, /",
-      "Features, /features"
-    ]
-  },
-  {
-    "slug": [
-      "beta-backlog",
-      "05"
-    ],
-    "url": "/beta-backlog/05",
-    "file": "public/content/beta-backlog/05.mdx",
-    "title": "05 Title",
-    "description": "Collating all data into a single point of reference",
-    "priority": "now",
-    "value": "low value",
-    "complexity": "low complexity",
-    "product": "prototype",
-    "layout": null,
-    "breadcrumbs": [
-      "Home, /",
-      "Features, /features"
-    ]
   },
   {
     "slug": [
@@ -238,6 +117,66 @@
   },
   {
     "slug": [
+      "design",
+      "design-practices"
+    ],
+    "url": "/design/design-practices",
+    "file": "public/content/design/design-practices.mdx",
+    "title": "Design practices and approach | ASC-TFRS Alpha Showcase",
+    "description": "The page description"
+  },
+  {
+    "slug": [
+      "design",
+      "guidance"
+    ],
+    "url": "/design/guidance",
+    "file": "public/content/design/guidance.mdx",
+    "title": "Need for guidance | ASC-TFRS Alpha Showcase",
+    "description": "The page description"
+  },
+  {
+    "slug": [
+      "design",
+      "investigation-themes"
+    ],
+    "url": "/design/investigation-themes",
+    "file": "public/content/design/investigation-themes.mdx",
+    "title": "Investigation themes | ASC-TFRS Alpha Showcase",
+    "description": "The page description"
+  },
+  {
+    "slug": [
+      "design",
+      "iterative-design"
+    ],
+    "url": "/design/iterative-design",
+    "file": "public/content/design/iterative-design.mdx",
+    "title": "Iterative evidence-based design | ASC-TFRS Alpha Showcase",
+    "description": "The page description"
+  },
+  {
+    "slug": [
+      "design",
+      "naming"
+    ],
+    "url": "/design/naming",
+    "file": "public/content/design/naming.mdx",
+    "title": "Naming the service | ASC-TFRS Alpha Showcase",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "design",
+      "service-blueprints-from-alpha"
+    ],
+    "url": "/design/service-blueprints-from-alpha",
+    "file": "public/content/design/service-blueprints-from-alpha.mdx",
+    "title": "Service blueprints from alpha | ASC-TFRS Alpha Showcase",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
       "example",
       "example"
     ],
@@ -248,10 +187,11 @@
   },
   {
     "slug": [
+      "example",
       "how-we-started"
     ],
-    "url": "/how-we-started",
-    "file": "public/content/how-we-started.mdx",
+    "url": "/example/how-we-started",
+    "file": "public/content/example/how-we-started.mdx",
     "title": "How we started",
     "tags": [
       "High priority"
@@ -259,10 +199,11 @@
   },
   {
     "slug": [
+      "example",
       "kitchen-sink"
     ],
-    "url": "/kitchen-sink",
-    "file": "public/content/kitchen-sink.mdx",
+    "url": "/example/kitchen-sink",
+    "file": "public/content/example/kitchen-sink.mdx",
     "title": "Kitchen sink",
     "description": "All the components in one place",
     "priority": "Now",
@@ -280,32 +221,41 @@
   },
   {
     "slug": [
+      "glossary"
+    ],
+    "url": "/glossary",
+    "file": "public/content/glossary.mdx",
+    "title": "Glossary | ASC-TFRS Alpha Showcase",
+    "description": "Glossary of frequently used acronyms and terms"
+  },
+  {
+    "slug": [
+      "tech",
+      "approach"
+    ],
+    "url": "/tech/approach",
+    "file": "public/content/tech/approach.mdx",
+    "title": "Technology approach | ASC-TFRS Alpha Showcase",
+    "description": "The page description"
+  },
+  {
+    "slug": [
+      "tech",
+      "standards"
+    ],
+    "url": "/tech/standards",
+    "file": "public/content/tech/standards.mdx",
+    "title": "Technology standards | ASC-TFRS Alpha Showcase",
+    "description": "The page description"
+  },
+  {
+    "slug": [
       "understanding",
       "context"
     ],
     "url": "/understanding/context",
     "file": "public/content/understanding/context.mdx",
     "title": "Context and policy overview | ASC-TFRS Alpha Showcase",
-    "description": "The home page description"
-  },
-  {
-    "slug": [
-      "understanding",
-      "glossary"
-    ],
-    "url": "/understanding/glossary",
-    "file": "public/content/understanding/glossary.mdx",
-    "title": "Glossary | ASC-TFRS Alpha Showcase",
-    "description": "Glossary of frequently used acronyms and terms"
-  },
-  {
-    "slug": [
-      "understanding",
-      "naming"
-    ],
-    "url": "/understanding/naming",
-    "file": "public/content/understanding/naming.mdx",
-    "title": "Naming the service | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -321,16 +271,6 @@
   {
     "slug": [
       "understanding",
-      "research"
-    ],
-    "url": "/understanding/research",
-    "file": "public/content/understanding/research.mdx",
-    "title": "Our research approach | ASC-TFRS Alpha Showcase",
-    "description": "The home page description"
-  },
-  {
-    "slug": [
-      "understanding",
       "service-blueprint-from-discovery"
     ],
     "url": "/understanding/service-blueprint-from-discovery",
@@ -340,11 +280,21 @@
   },
   {
     "slug": [
-      "understanding",
+      "user-research",
+      "research"
+    ],
+    "url": "/user-research/research",
+    "file": "public/content/user-research/research.mdx",
+    "title": "Our research approach | ASC-TFRS Alpha Showcase",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "user-research",
       "users"
     ],
-    "url": "/understanding/users",
-    "file": "public/content/understanding/users.mdx",
+    "url": "/user-research/users",
+    "file": "public/content/user-research/users.mdx",
     "title": "Our users and their needs | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   }

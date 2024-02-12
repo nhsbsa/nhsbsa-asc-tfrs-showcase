@@ -1,0 +1,113 @@
+---
+title: Technology approach | ASC-TFRS Alpha Showcase
+description: The page description
+---
+
+<Heading caption='Tech' tag='h1'>Technology approach</Heading>
+
+<GridRow>
+<GridColumn width={'2/3'}>
+        <LeadParagraph>
+        The key objectives of the technical team during Alpha has been:
+            - Identify and understand potential integrations and re-use
+            - Identify technical complexity and constraints and assist with policy/product decisions
+            - Ensure a product design and a full service architecture that will be reliable and secure
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+        <nav className="in-page-nav">
+            #### On this page
+            * [Standard and principles](#standard-and-principles)
+            * [Technology overview](#technology-overview)
+            * [Component overview](#component-overview)
+        </nav>
+    </GridColumn>
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Standard and principles
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        The service will follow internal NHSBSA, wider government and industry led standards throughout. 
+
+        Internal NHSBSA
+
+        - [NHSBSA Digital, Data and Technology Playbook](/uri "https://nhsbsa.github.io/nhsbsa-digital-playbook/")
+        
+        NHS and Government
+        - [NHS Technology Standards](/uri "https://digital.nhs.uk/about-nhs-digital/corporate-information-and-documents/nhs-digital-data-and-technology-standards")
+        - [Government Service Standards](/uri "https://www.gov.uk/service-manual/service-standard")
+        - [Government Technology Code of Practice](/uri "https://www.gov.uk/guidance/the-technology-code-of-practice")
+        - [Government Cloud First Policy](/uri "https://www.gov.uk/guidance/government-cloud-first-policy")
+        - [National Cyber Security Centre Cloud Principles](/uri "https://www.ncsc.gov.uk/collection/cloud/the-cloud-security-principles")
+        - [Government standard around making the Technology sustainable](/uri "https://www.gov.uk/guidance/make-your-technology-sustainable")
+
+        Industry
+        - [AWS Well Architected Framework](/uri "https://docs.aws.amazon.com/wellarchitected/latest/framework/welcome.html")
+        - [OWASP Top 10 Security Risks](/uri "https://owasp.org/www-project-top-ten/")
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Technology overview
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        <Table>
+            <TableHeader>
+            <TableCell>Consideration</TableCell><TableCell>Related Principle/Standard</TableCell>
+            </TableHeader>
+        <TableRow>
+            <TableCell>Hosted by Amazon Web Services</TableCell><TableCell>Gov Public Cloud First Policy</TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Creating a new End-to-end seamless and integrated Digital Service</TableCell><TableCell>Gov Design Principle of “Designing Services Not Websites”</TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Internet-facing fully accessible web portal to View, submit and manage claims and a web portal to allow internal NHSBSA staff to process and manage claims.</TableCell><TableCell>Gov Principle of “This is for Everyone”</TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Asynchronous services</TableCell><TableCell>AWS Well-Architected – Performance Pillar and NHS Technology Standard of enabling infrastructure that supports technical evolution, financial investment and resilience</TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Implemented in Node.JS using Open-Source components</TableCell><TableCell>Gov Design Principle of Make Things Open</TableCell>
+        </TableRow>
+        <TableRow>
+            <TableCell>Reusing NHSBSA Finance and File Storage services</TableCell><TableCell>Leveraged BSA Common components where appropriate</TableCell>
+        </TableRow>
+        </Table>
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Component overview
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        <ZoomImage alt="Persona 2: An administrator in a medium-sized care provider." small={'../../images/component-diagram.png'} medium={'../../images/component-diagram.png'} />
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+    <GridColumn width={'full'}>
+        ---
+    </GridColumn>
+</GridRow>
+<GridRow>
+    <GridColumn width={'1/2'}>
+        <LinkBlock style="prev" url="/design/naming" title="Design" text="Naming our service" />
+    </GridColumn>
+    <GridColumn width={'1/2'}>
+        <LinkBlock style="next" url="/tech/standards" title="Tech" text="Technology standards" />
+    </GridColumn>
+</GridRow>
