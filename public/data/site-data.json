@@ -88,6 +88,16 @@
   {
     "slug": [
       "beta",
+      "research-planning"
+    ],
+    "url": "/beta/research-planning",
+    "file": "public/content/beta/research-planning.mdx",
+    "title": "Research in private beta | ASC-TFRS Alpha Showcase",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "beta",
       "service-performance"
     ],
     "url": "/beta/service-performance",
