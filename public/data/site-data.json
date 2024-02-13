@@ -21,7 +21,7 @@
     ],
     "url": "/approach/assumptions",
     "file": "public/content/approach/assumptions.mdx",
-    "title": "Assumptions overview | ASC-TFRS Alpha Showcase",
+    "title": "Challenging our riskiest assumptions | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
@@ -50,26 +50,6 @@
     "url": "/assessment-support",
     "file": "public/content/assessment-support.mdx",
     "title": "Assessment Support | ASC-TFRS Alpha Showcase",
-    "description": "The home page description"
-  },
-  {
-    "slug": [
-      "assumptions",
-      "assumption-1"
-    ],
-    "url": "/assumptions/assumption-1",
-    "file": "public/content/assumptions/assumption-1.mdx",
-    "title": "Assumption 1 | ASC-TFRS Alpha Showcase",
-    "description": "The home page description"
-  },
-  {
-    "slug": [
-      "assumptions",
-      "assumption-2"
-    ],
-    "url": "/assumptions/assumption-2",
-    "file": "public/content/assumptions/assumption-2.mdx",
-    "title": "Assumption 2 | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
   },
   {
