@@ -1,20 +1,22 @@
 ---
-title: Design overview | ASC-TFRS Alpha Showcase
+title: Investigation themes | ASC-TFRS Alpha Showcase
 description: The page description
 ---
 
-<Heading caption='Our approach' tag='h1'>Design overview</Heading>
+<Heading caption='Design' tag='h1'>Investigation themes</Heading>
 
 <GridRow>
     <GridColumn width={'2/3'}>
-        <LeadParagraph>We have followed a rigorous design methodology where we have taken a collaborative, multidisciplinary approach to design to ensure that our prototype has developed over time to best meet the needs of the users within the adult social care policy space.</LeadParagraph>
+        <LeadParagraph>Over the course of iterating the prototype several important themes emerged which we have spent a lot of time thinking about and which have between them contributed to the final shape of the prototype.</LeadParagraph>
     </GridColumn>
     <GridColumn width={'1/3'}>
         <nav className="in-page-nav">
             #### On this page
-            * [Design practices and approach](#design-practices-and-approach)
-            * [Major design versions](#major-design-versions)
-            * [Investigation themes](#investigation-themes)
+            * [What a claim is](#what-a-claim-is)
+            * [Mental scaffolding](#mental-scaffolding)
+            * [Explaining the types of funding](#explaining-the-types-of-funding)
+            * [Tension between simplicity and flexibility](#tension-between-simplicity-and-flexibility)
+            * [Claim statuses](#claim-statuses)
         </nav>
     </GridColumn>
 </GridRow>
@@ -22,132 +24,10 @@ description: The page description
 <GridRow>
 
     <GridColumn width={'full'}>
-        ## Design practices and approach
+        ## What a claim is
     </GridColumn>
 
     <GridColumn width={'3/4'}>
-
-        At each stage of the design process, we used research findings to develop new hypotheses to test and to determine whether previous hypotheses could be validated or not. These are all documented in our design log.
-
-        All design decisions have been based on user needs, though where necessary we have also been mindful of business needs, such as those around the processing of claims.
-
-        The whole team was involved in design ideation discussions, though detailed design work was carried out in partnership between the interaction and content designers on the team. This was done in face to face sessions, which maximised opportunities for collaboration and multidisciplinary design synergies.
-
-        We agreed with DHSC early on that we would use the [GOV.UK design system](https://design-system.service.gov.uk/), though where necessary we also explored components and patterns from related departmental design systems (such as MOJ and HMRC).
-
-        We have identified a new use case for the GDS 'check answers' pattern. We plan to continue exploring this in beta and if it proves to be successful we will share our evidence with the wider government design community.
-
-    </GridColumn>
-
-</GridRow>
-
-<GridRow>
-
-    <GridColumn width={'full'}>
-        ## Major design versions
-    </GridColumn>
-
-    <GridColumn width={'3/4'}>
-
-        We agreed early in alpha to focus predominantly on the part of the service that would be used by people submitting and managing claims. While we have started to think about the related part of the service for internal NHSBSA users, the main design work on this will take place in early beta.
-
-        We produced 10 major iterations of the submission prototype. Each of these can be explored from the prototype repository.
-
-        ### Version 1
-
-        This was an internal prototype we used to explore possible data groupings and approaches to represent and manage claims.
-
-        ### Version 2
-
-        Another internal prototype where we started to look at how claims would progress through the system and the statuses we'd need within the service.
-
-        ### Version 3
-
-        The first version tested with users, though it did not include dynamic data so rather than true scenario-based usability testing, users walked through the service and gave their thoughts on each screen within the claim submission journey.
-
-        <Details title={'Specific features of version 3'}>
-            * Added the 'start now' and eligibility guidance screens
-            * Iterated the claim statuses from 9 down to 5 options
-            * Introduced search filters
-            * Added workflows for starting claims by either learner or event
-        </Details>
-
-        <InsetText>
-            #### Using generateive AI to create realistic data
-            One of our takeaways from testing version 3 with users was how much of a cognitive blocker a lack of realistic data in the prototype caused. This unrealistic data could be categorised into three groups:
-            - Courses
-            - Learners
-            - Claims
-            
-            To tackle this we used generative AI to help in the number of ways. Firstly we used it to create a list of fictitious but realistic looking adult social care training courses. The we used it help write code that could generate random learners and claims data that we could then manipulate in the prototype. Not only did this overcome the cognitive blockers posed by unrealistic data but we can now use these data generators to scale the amount of data in prototype for different sizes of organisation. Not only does this provide better flexibility in how we can test with users but also allows us to better visualise how the designs scales with varied amount of data.
-        </InsetText>
-
-        ### Version 4
-
-        This was the basis for the second round of user testing. We added large volumes of realistic data on learners, courses and claims to enable true usability testing to take place.
-        
-        <Details title={'Specific features of version 4'}>
-            * Explored terminology around the different funding pots and claims
-            * Combined the flows to create a new claim
-            * Introduced the GDS 'add a new item' pattern when adding multiple learners to a claim
-            * Added confirmation pages and emails
-            * Split the 'add evidence' flow from the 'add claim' flow to make it easier to add evidence as a subsequent step to starting a new claim
-        </Details>
-
-        ### Version 5
-
-        This was used in the third round of user testing and made a number of major design changes.
-
-        <Details title={'Specific features of version 5'}>
-            * Made further terminology refinements, for example to clarify that the service cannot be used to book training
-            * Introduced a new claim screen to make it much easier for users to see what claim information they'd alredy added and what was incomplete or missing
-            * Changed the concept of a claim to relate to a set of learners doing a course on a particular date (rather than a claim only ever being for one learner) which massively shortens the claims list and relates better to users' mental models
-            * Got the filters working
-            * Added column sorting and dummy pagination links to the 'manage claims' screen
-        </Details>
-
-        ### Version 6
-
-        This was put together to support the final round of user testing, which focused on content and wording.
-
-        <Details title={'Specific features of version 6'}>
-            * Added the recommended service name
-            * Created 2 separate versions of the start page to allow us to get feedback on what to name the funding pots
-            * Iterated the eligibility pages
-            * Introduced a new help page around starting a new claim, which both video and text content
-        </Details>
-        
-        ### Version 7
-
-        This version brought together all the findings from alpha into a final prototype covering the claim submission and management user journeys. It has not yet been tested with users.
-
-
-        <Details title={'Specific features of version 7'}>
-            * Added the agreed funding pot names
-            * Introduced an initial version of a dashboard screen to route users to the different options available to them and provide a summary of claims within the service
-            * Made final iterations to the claim statuses (removing the 'ready to submit' status and introducing the 'approved' status)
-            * Improved the claim screen by making the design more consistent with the GDS 'check answers' pattern, making it easier to add evidence, simplifying the cost requirements and adding a payment date field
-            * Replaced the claim filters with a global search and added a new advanced search screen
-            * Added the start and manage claim screens for CPD claims
-            * Started to consider the implications of split claims, where 60% of the reimbursement is provided upfront and 40% on completion
-        </Details>
-
-    </GridColumn>
-
-</GridRow>
-
-<GridRow>
-
-    <GridColumn width={'full'}>
-        ## Investigation themes
-    </GridColumn>
-
-    <GridColumn width={'3/4'}>
-
-        Over the course of iterating the prototype several important themes emerged which we have spent a lot of time thinking about and which have between them contributed to the final shape of the prototype.
-
-        ### What a claim is
-
         We realised early in alpha that it would be important to define exactly what constitutes a claim as part of this service. We knew a claim could be made up of a combination of activities (such a course on a specific date) and learners (who attended the course). But we weren't sure how wide a claim should be. Would users want to submit multiple activities and learners in a single claim?
 
         We decided to start with the finest granularity we could and see what users made of this. This would be a single learner associated with a single activity. We called this a 'claim item' as we hypothesised that users would expect to combine multiple claim items into a single 'claim', which they would submit to NHSBSA on a periodic basis.
@@ -169,9 +49,17 @@ description: The page description
                 <ZoomImage alt="Version 5 expanded the concept of a claim to cover multiple learners." small={'../../images/ui-manage-claims-2-thumb.png'} medium={'../../images/ui-manage-claims-2.png'} />
             </GridColumn>
         </GridRow>
+    </GridColumn>
 
-        ### Mental scaffolding
+</GridRow>
 
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Mental scaffolding
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
         In early versions of the prototype we had a 'one question per screen' approach to the start a new claim flow, allowing users to build up the information that made up a claim.
 
         What we found, however, was that while each individual question within the flow was understood by users, many of them were confused by where they were in the process and how much of a claim they had already completed or had left to fill in. They also wanted flexibility in terms of the order in which they entered information.
@@ -192,9 +80,18 @@ description: The page description
                 <ZoomImage alt="The new claim 'scaffolding' page in version 5, allowing users to see what they had already added and what was missing." small={'../../images/ui-start-claim-v5-thumb.png'} medium={'../../images/ui-start-claim-v5.png'} />
             </GridColumn>
         </GridRow>
-        
-        ### Explaining the types of funding
+    </GridColumn>
 
+</GridRow>
+
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Explaining the types of funding
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
         The scheme policy describes 2 types of funding that will be available through the reimbursement service. One of the content design challenges was to find an appropriate way to describe these 'funding pots'.
 
         The DHSC service commission used the terms 'targeted upskilling' for the primary pot and 'Continuing Professional Development' for the other. We suspected these would not be terms that users would naturally understand or find useful but felt they were the best place to start in version 3. We then explored alternative terminology in versions 4 and 5, as shown in the table below.
@@ -273,9 +170,19 @@ description: The page description
                 <ZoomImage alt="Option B in version 6 used 3 funding pots." small={'../../images/ui-start-screen-v6a-thumb.png'} medium={'../../images/ui-start-screen-v6b.png'} />
             </GridColumn>
         </GridRow>
+    </GridColumn>
 
-        ### Tension between simplicity and flexibility
+</GridRow>
 
+
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Tension between simplicity and flexibility
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
         There is always a trade off in design between making things as simple as possible for a user but also ensuring the service is flexible enough to support different expectations and ways of working. We have been aware of this throughout the process of iterating the prototype.
 
         For example, we considered what should happen if a training course was covered by more than one invoice. For instance, an employer might pay for several members of staff to attend some training and then subsequently pay separately for some additional colleagues.
@@ -283,9 +190,18 @@ description: The page description
         In this case, the most flexible approach would be to allow separate evidence of payment to be uploaded against each learner within a claim. But this also makes the process of constructing a claim more complicated. Following usability testing, the approach we have ended up with in version 6 of the prototype is to say that each claim must relate to a single invoice. This simplifies the design of the claim screen by only requiring a single piece of payment evidence to be uploaded. It does mean, however, that in the case of multiple invoices for a single activity, several claims would need to be submitted.
 
         This feels like a reasonable approach but is something we will continue to explore - with both end users and NHSBSA users - in early beta.
+    </GridColumn>
 
-        ### Claim statuses
+</GridRow>
 
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Claim statuses
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
         Fundemental to the management of claims is the ability to track them through the end-to-end process. We realised early in alpha this woiuld require a set of clear and unambiguous claim statuses. We have iterated these over the course of alpha, starting with 9 options (version a in the table below) and ending alpha with 5 (version c). Based on usability testing, these final statuses are well understood by users.
 
         <Table>
@@ -353,7 +269,6 @@ description: The page description
                 <ZoomImage alt="By version 3 we moved to the tabbed approach to allow users to easily see the journey as claims progress through the tabs from left to right." small={'../../images/ui-status-tabs-v3-thumb.png'} medium={'../../images/ui-status-tabs-v3.png'} />
             </GridColumn>
         </GridRow>
-
     </GridColumn>
 
 </GridRow>
@@ -365,9 +280,9 @@ description: The page description
 </GridRow>
 <GridRow>
     <GridColumn width={'1/2'}>
-        <LinkBlock style="prev" url="/approach/technical" title="Our approach" text="Technical overview" />
+        <LinkBlock style="prev" url="/design/iterative-design" title="Design" text="Iterative evidence-based design" />
     </GridColumn>
     <GridColumn width={'1/2'}>
-        <LinkBlock style="next" url="/approach/service-blueprints-from-alpha" title="Our approach" text="Service blueprints from alpha" />
+        <LinkBlock style="prev" url="/design/guidance" title="Design" text="Need for guidance" />
     </GridColumn>
 </GridRow>

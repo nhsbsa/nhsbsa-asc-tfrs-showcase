@@ -1,0 +1,127 @@
+---
+title: Challenging our riskiest assumptions | ASC-TFRS Alpha Showcase
+description: The home page description
+---
+
+<Heading caption='Our approach to alpha' tag='h1'>Challenging our riskiest assumptions</Heading>
+
+<GridRow>
+    <GridColumn width={'2/3'}>
+        <LeadParagraph>
+             At the beginning of our alpha we ran a workshop to [document and map our assumptions](https://miro.com/app/board/uXjVMhNCsmw=/?share_link_id=855651440063) (Miro password: bsaasc123) and map them to understand which ones were riskiest.
+        </LeadParagraph>
+    </GridColumn>
+    <GridColumn width={'1/3'}>
+        <nav className="in-page-nav">
+            #### On this page
+            * [Overview](#overview)
+            * [Policy](#policy)
+            * [Governance](#governance)
+            * [User behaviour](#user-behaviour)
+        </nav>
+    </GridColumn>
+</GridRow>
+
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Overview
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        As we progressed and learned more about our potential service and the constraints we had, we [revisited and iterated](https://miro.com/app/board/uXjVMhNCsmw=/?moveToWidget=3458764565018791068&cot=1) (Miro password: bsaasc123) our earlier assumptions to make sure they were still relevant and still valid.
+
+        We will return to our assumptions in early beta to review those that remain and identify any new areas we will to focus on.
+
+        <InsetText>
+        The assumptions fell into 3 core areas around:
+
+        - **policy** — the description and constraints around TFRS, and how we understood these to be able to design the service
+        - **governance** — the internal NHSBSA governance of the service, for instance around counter fraud
+        - **user behaviour** — how both external and internal users would behave and their expectations of the service
+        </InsetText>
+    </GridColumn>
+</GridRow>
+
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Policy
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        Our initial assumption was that the policy around TFRS was in a suitable position for us to start making design decisions on. We realised early in alpha, however, that the service commission document - which described the policy - was still being worked on. This had huge implications for us, as time constraints meant we needed to start design work as early as possible. We therefore set up daily meetings with DHSC policy colleagues to identify and address areas where the service commission was vague or ambiguous. 
+
+        This helped us to create a positive, constructive relationship with policy and quickly get to a point where we had the necessary clarity to start the design of the service. Without this effort, we would be taking on huge amounts of policy debt into beta.
+    </GridColumn>
+</GridRow>
+
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Governance
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        We had assumed that thinking around governance issues, such as evidence, identity checks and fraud protection measures, would have been taken forward by our solution architect (SA). Unfortunately, though, we lost our SA in early alpha and this role was not replaced for some time. This led to a considerable gap in terms of thinking through these governance issues. We had made design decisions early on, without the input of an SA, that we had to pivot on later.
+        
+        For example, our prototype assumed that we would be able to get back information from internal NHSBSA systems around the payment status of claims. We later found, however, that this would be much more challenging than expected and might not be possible, at least for private beta.
+    </GridColumn>
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## User behaviour
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        Our service will have 2 types of users - external users from ASC providers who’ll be submitting claims, and internal NHSBSA users who’ll be processing them. During alpha, we prioritised external users, as the submission journey is much riskier from a design perspective. Of the assumptions around the behaviour of these external users, we focussed on 2 areas where we believed we could provide the most value to our users, and lay a foundation for testing the other assumptions at a later date.
+
+        It makes sense to defer our thinking around some of the other assumptions to beta, for example around the reporting needs for submitters and organisations. If we had focussed on these without first understanding what data required by the service, we may have prototyped and tested things that weren’t feasible.
+
+        <Tag text="Assumption" colour="purple" />
+
+        <InsetText>
+            Submitters will submit claims that include a mixture of multiple courses or single courses per training recipient
+        </InsetText>
+
+        Our initial research indicated that there are different ways of looking at an organisation’s training and development activity. One approach would be through the lens of a learner, focussing on their individual needs and the different activities they undertake to meet these. This might be particularly suitable for a new member of staff going through an induction process or someone working towards a promotion.
+
+        The other would be through the lens of an activity, that is the course or qualification. This approach is more suited to delivering a programme of training to upskill staff in a particular area.
+
+        We assumed that both of these would be common and we’d need our service to support a variety of approaches to learning and development.
+
+        We did find that claims must cater for a certain amount of complexity and flexibility but also that most people we spoke to felt that the second lens - based around the activity rather than the learner - was the more common and useful approach. This is what we’ve therefore prioritised from a design perspective, though if necessary we could return to look at the first lens in beta.
+
+        <Tag text="Assumption" colour="purple" />
+
+        <InsetText>
+            Submitters will be time poor but tech savvy
+        </InsetText>
+        
+        While anecdotally we had heard that care workers might have lower digital literacy than other professions, we realised early in alpha that our users wouldn’t be the people doing the training (the learners) but the administrators and managers responsible for organisational learning. We assumed that these users would have greater tech skills but would be equally pushed for time as the care workers, due to the demands of working in busy, stressful environments with numerous distractions and competing demands.
+
+        We generally found this to be true, with the people we interviewed rating their IT skills highly in terms of the systems they knew well and commonly used. But with research showing us that staff are time poor due to being overworked and understaffed, we must be careful we do not add to these pressures by creating an overly complex service or one that does not meet the needs of our users.
+
+        Care staff do wish to undergo training and development, but adding a layer of difficulty in claiming reimbursement may dissuade ASC organisations from prioritising these opportunities. We have therefore focussed during alpha on creating a prototype that supports people’s ways of working and mental models about reimbursement without requiring them to spend large amounts of time getting to grips with a complex new system.
+
+    </GridColumn>
+</GridRow>
+
+<GridRow>
+    <GridColumn width={'full'}>
+        ---
+    </GridColumn>
+</GridRow>
+<GridRow>
+    <GridColumn width={'1/2'}>
+        <LinkBlock style="prev" url="/approach/team-and-wow" title="Our approach to alpha" text="Team shape and ways of working" />
+    </GridColumn>
+    <GridColumn width={'1/2'}>
+        <LinkBlock style="next" url="/user-research/research" title="Understanding our users and their needs" text="Our research approach" />
+    </GridColumn>
+</GridRow>
