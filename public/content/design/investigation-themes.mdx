@@ -60,17 +60,23 @@ description: The page description
     </GridColumn>
 
     <GridColumn width={'3/4'}>
-        In early versions of the prototype we had a 'one question per screen' approach to the start a new claim flow, allowing users to build up the information that made up a claim.
+        In early versions of the prototype we had a ‘one question per screen’ approach to the start a new claim flow, allowing users to build up the information that made up a claim.
 
         What we found, however, was that while each individual question within the flow was understood by users, many of them were confused by where they were in the process and how much of a claim they had already completed or had left to fill in. They also wanted flexibility in terms of the order in which they entered information.
 
-        In version 5 we therefore created a new claim screen, which we hypothesised would provide the 'mental scaffolding' to enable users to visualise a claim before they started filled in the information and to understood their progress.
+        In version 5 we therefore created a new claim screen, which we hypothesised would provide the ‘mental scaffolding’ to enable users to visualise a claim before they started filled in the information and to understood their progress.
 
-        We adapted the GDS 'check answers' pattern for this screen, though in our versions users would see the list of items before they'd added their 'answers' and use it as a checklist to enable them to add the information in whatever order they wished.
+        We explored 2 options for this during our design ideation phase for this sprint: the task list component and a variant of the check your answers pattern for missing information. After discussion we felt that the task list component didn’t meet our users needs because:
+        - users could be completing the claim over multiple sessions before submitting
+        - it couldn’t show users their answers if they returned to the claim, slowing down how quickly they could pick it up again to complete
 
-        This worked really well in general, though users still found a few things slightly confusing. For example, we used 'incomplete' tags to indicate where information had not yet been added. But some users thought this meant that the claim had already been started. There was also some confusion with the overall claim status of 'incomplete'.
+        So we instead opted to use a slightly adapted version of the GDS ‘check answers’ pattern using the summary list missing information component. This would allow users to see the list of items before they’d added their ‘answers’ and use it as a checklist to enable them to add the information in whatever order they wished.
 
-        In version 7 we iterated this screen to bring the pattern more in line with the GDS check answers pattern and remove the 'incomplete' tags. We expect this to test well in early beta but can further fine tune it if necessary.
+        This worked really well in general, though users still found a few things slightly confusing. For example, we used ‘incomplete’ tags to indicate where information had not yet been added (which we drew from the task list component). But some users thought this meant that the claim had already been started. There was also some confusion with the overall claim status of ‘incomplete’.
+
+        We had also used the summary card component for the learners section. Each card included links for adding any evidence relating to that learner. For claims with lots of learners, however, this made the screen very long and users found itvisually overwhelming. We found that users were also overlooking the need to add evidence.
+
+        In version 7 we iterated this screen to bring the pattern back in line with the GDS check answers pattern with missing information and remove the ‘incomplete’ tags. We also separated out the evidence of completion to it’s own section.  We expect this to test well in early beta but can further fine tune it if necessary.
 
         <GridRow>
             <GridColumn width={'1/3'}>
@@ -79,7 +85,17 @@ description: The page description
             <GridColumn width={'1/3'}>
                 <ZoomImage alt="The new claim 'scaffolding' page in version 5, allowing users to see what they had already added and what was missing." small={'../../images/ui-start-claim-v5-thumb.png'} medium={'../../images/ui-start-claim-v5.png'} />
             </GridColumn>
+            <GridColumn width={'1/3'}>
+                <ZoomImage alt="The claim scaffold screen for version 7, removing the incomplete tags and separating out the evidence of completion into it’s own section." small={'../../images/ui-start-claim-v7.png'} medium={'../../images/ui-start-claim-v7.png'} />
+            </GridColumn>
         </GridRow>
+        <GridRow>
+            <GridColumn width={'full'}>
+                Here is a basic visual to show the effect the evolution of the claim scaffold had on the steps of the journey.
+                <ZoomImage alt="A basic visual to show the effect the evolution of the claim scaffold had on the steps of the journey." small={'../../images/claim-evolution.png'} medium={'../../images/claim-evolution.png'} />
+            </GridColumn>
+        </GridRow>
+
     </GridColumn>
 
 </GridRow>
