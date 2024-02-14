@@ -1,9 +1,9 @@
 ---
-title: Technology standards | ASC-TFRS Alpha Showcase
+title: Meeting the technology standards | ASC-TFRS Alpha Showcase
 description: The page description
 ---
 
-<Heading caption='Tech' tag='h1'>Technology standards</Heading>
+<Heading caption='Tech' tag='h1'>Meeting the technology standards</Heading>
 
 <GridRow>
     <GridColumn width={'2/3'}>
@@ -49,30 +49,33 @@ description: The page description
             <TableCell>Threat</TableCell><TableCell>Mitigations</TableCell>
             </TableHeader>
         <TableRow>
-            <TableCell>**Spoofing**\
+            <TableCell>**Fraud**\
             Someone completing a claim on behalf of an organisation they are not part of.</TableCell>
             <TableCell>
+            - Bank Account details will be checked against business accounts and verify manually by processors
+            - RBAC will be setup within organisations to control who has access to a given organisations
             </TableCell>
         </TableRow>
         <TableRow>
-            <TableCell>**Spoofing**\
+            <TableCell>**Fraud**\
             Someone completing a claim on behalf of an organisation that does not exist</TableCell>
             <TableCell>
             - Registration of organisations will be checked against the WDS dataset to ensure the organisation is valid and up to date
             </TableCell>
         </TableRow>
         <TableRow>
-            <TableCell>**Spoofing**\
+            <TableCell>**Fraud**\
             Someone completing a claim after providing personal bank details</TableCell>
             <TableCell> 
-            - RBAC in the Claims web app will limit the changing of bank details to the administrator of a give ASC Workplace
+            - RBAC in the Claims web app will limit the changing of bank details to the administrator of a give ASC Workplace         
             - Payments within the NHSBSA Integra system will be subject to manual verification on 10% payments
             </TableCell>
         </TableRow>
         <TableRow>
-            <TableCell>**Spoofing**\
+            <TableCell>**Fraud**\
             Someone completing a claim for staff who did not complete training</TableCell>
             <TableCell>
+            - TU Evidence requires the learner’s name and other information to be present on the certificate. DHSC are working with Training providers to explore additional measures
             - Claims will be audited, stored securely with relevant retention policies. Manual checks with be conducted on 10% of claims
             </TableCell>
         </TableRow>
@@ -80,7 +83,7 @@ description: The page description
             <TableCell>**Repudiation**\
             Someone disputing the details of a claim they submitted</TableCell>
             <TableCell>
-            - Claims will be audited, stored securely with relevant retention policies
+            - Claims will be audited and stored securely with relevant retention policies
             </TableCell>
         </TableRow>
          <TableRow>
@@ -91,7 +94,7 @@ description: The page description
             </TableCell>
         </TableRow>
          <TableRow>
-            <TableCell>**DoS**\
+            <TableCell>**Denial of Services (DoS)**\
             Someone attempts to bring the service down by over- serving requests</TableCell>
             <TableCell>
             - AWS WAF in place and DDoS protection enabled
@@ -145,8 +148,8 @@ description: The page description
         <TableRow>
             <TableCell>Integration</TableCell>
             <TableCell>
-            - New Skills for Care ASC WDS Api
-            - CDC Api (tbc)
+            - New Skills for Care ASC  Workforce Data Set (WDS) API
+            - Care Quality Commission (CQC) API (tbc depending on the details of the WDS API)
             </TableCell>
         </TableRow>
         <TableRow>
@@ -197,7 +200,7 @@ description: The page description
         - Implementing GitLeaks as a pre-commit hook to prevent the accidental inclusion of secrets in our commits.
         - Documented process to address and remediating vulnerabilities found within the codebase.
 
-        The risk assessment will take into account the integration with the NHSBSA Finance product Integra.
+        The risk assessment will take into account the integration with the NHSBSA Finance product Integra and any Fraud prevention algorithms.
     </GridColumn>
 
 </GridRow>
@@ -277,7 +280,7 @@ description: The page description
 </GridRow>
 <GridRow>
     <GridColumn width={'1/2'}>
-        <LinkBlock style="prev" url="/tech/approach" title="Tech" text="Technology approach" />
+        <LinkBlock style="prev" url="/tech/approach" title="Tech" text="Technology approach and overview" />
     </GridColumn>
     <GridColumn width={'1/2'}>
         <LinkBlock style="next" url="/beta/recommendations" title="Looking ahead to beta" text="Recommendations" />
