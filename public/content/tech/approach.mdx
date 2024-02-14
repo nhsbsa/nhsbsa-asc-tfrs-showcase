@@ -19,7 +19,10 @@ description: The page description
             #### On this page
             * [Standard and principles](#standard-and-principles)
             * [Technology overview](#technology-overview)
-            * [Component overview](#component-overview)
+            * [Container diagram](#container-diagram)
+            * [Implementation diagram](#implementation-diagram)
+            * [Authentication](#authentication)
+            * [Handling of approved courses](#handling-of-approved-courses)
         </nav>
     </GridColumn>
 </GridRow>
@@ -89,11 +92,55 @@ description: The page description
 <GridRow>
 
     <GridColumn width={'full'}>
-        ## Component overview
+        ## Container diagram
     </GridColumn>
 
     <GridColumn width={'3/4'}>
-        <ZoomImage alt="Persona 2: An administrator in a medium-sized care provider." small={'../../images/component-diagram.png'} medium={'../../images/component-diagram.png'} />
+        <ZoomImage alt="A visual showing the container diagram" small={'../../images/container-diagram.png'} medium={'../../images/container-diagram.png'} />
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Implementation diagram
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        <ZoomImage alt="A visual showing the implementation diagram" small={'../../images/implementation-diagram.png'} medium={'../../images/implementation-diagram.png'} />
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Authentication
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        Authentication for NHSBSA caseworkers and call centre staff will be provided by Microsoft Entra ID, which is a well establish within NHSBSA.
+
+        Authentication and Identity Access Management (IAM) for ASC Organisation staff consists of 2 main challenges:
+        - Chosen Technology and management of users
+        - Consistent branding and journey for users - i.e. making users login with different means
+
+        We have chosen [Azure B2C](/uri "https://learn.microsoft.com/en-us/azure/active-directory-b2c/overview") for the ASC Organisation users. Azure B2C is an approved technology within NHSBSA for similar use-cases. Analysis show that it can meet functional & non-functional requirements of the service.
+
+        There is a risk that multiple login mechanisms exist within the Adult Social Care sector. We have suggested that a piece of work to look at the strategic IAM and Account mechanism within the sector.
+    </GridColumn>
+
+</GridRow>
+
+<GridRow>
+
+    <GridColumn width={'full'}>
+        ## Handling of approved courses
+    </GridColumn>
+
+    <GridColumn width={'3/4'}>
+        DHSC have planned for a separate team to manage the details of approved Targeted Up-skilling Courses. It is envisioned that this will be managed centrally and accessed via a versioned API. However, the initial MVP solution will involve the TFRS service storing a version of that file and handling change management. A suitable data model and change management approach is being agreed.
     </GridColumn>
 
 </GridRow>
