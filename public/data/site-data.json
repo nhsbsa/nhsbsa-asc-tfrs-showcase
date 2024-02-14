@@ -225,7 +225,7 @@
     ],
     "url": "/tech/approach",
     "file": "public/content/tech/approach.mdx",
-    "title": "Technology approach | ASC-TFRS Alpha Showcase",
+    "title": "Technology approach and overview | ASC-TFRS Alpha Showcase",
     "description": "The page description"
   },
   {
@@ -235,7 +235,7 @@
     ],
     "url": "/tech/standards",
     "file": "public/content/tech/standards.mdx",
-    "title": "Technology standards | ASC-TFRS Alpha Showcase",
+    "title": "Meeting the technology standards | ASC-TFRS Alpha Showcase",
     "description": "The page description"
   },
   {
