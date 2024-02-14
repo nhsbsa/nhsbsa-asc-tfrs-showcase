@@ -78,11 +78,19 @@ description: The page description
         Version 3 was tested in **Submitters Round Two - Usability testing**, go to [Our research approach](../../user-research/research#planning-and-conducting-research) to learn more about our research aims for this round.
 
         <Details title={'What we learned from testing version 3'}>
-            * Nick to add content
+            * Many users instinctively compared our service to their experience of the Workforce Development Fund
+            * Eligibility is a key concern of users
+            * It is important that the language in the service does not reinforce the perception that registered staff are more important than non-registered
+            * There was concern around the potential for duplication of claims, especially for learners with the same name
+            * No-one had heard of 'targeted upskilling' and the term 'claim items' caused considerable confusion
+            * The claim item statuses were well liked and understood
+            * The concept of an 'L&D event' was popular, though the terminology was less so
+            * The different types of evidence weren't understood, or the reasons they were needed
+            * The wording of the button on the check your answers page was confusing as people thought it would add further claims rather than finishing the current one
         </Details>
 
         <InsetText>
-            ### Using generateive AI to create realistic data
+            ### Using generative AI to create realistic data
             Usability testing of version 3 showed that a lack of realistic data in the prototype was a significant cognitive blocker for users. This unrealistic data comprised:
             - courses 
             - learners
@@ -123,7 +131,14 @@ description: The page description
         Version 4 was tested in **Submitters Round Three - Usability testing**, go to [Our research approach](../../user-research/research#planning-and-conducting-research) to learn more about our research aims for this round.
 
         <Details title={'What we learned from testing version 4'}>
-            * Nick to add content
+            * The descriptions of the 2 funding pots were better received (though 'direct care' isn't specific enough as it also relates to nurses and AHPs)
+            * Many users incorrectly expected the service to allow them to book the training rather than just claim reimbursement
+            * Users are much happier thinking about 'claims' rather than 'claim items'
+            * The combined 'start a new claim' flow generally worked well, though many users felt there were some unecessary steps (for instance, having to view course and learner details when adding them)
+            * Users were often unclear what the learner ID referred to and whether it related to their internal systems
+            * The confirmation emails were seen as helpful
+            * The process of adding evidence was confusing as users were unsure what they needed to upload and when
+            * In general, as users went through the flow to start a claim they seemed unsure about how far through the process they were, what happens next and whether their progress had been saved
         </Details>
 
     </GridColumn>
@@ -151,8 +166,16 @@ description: The page description
 
         Version 5 was tested in **Submitters Round Four - Usability testing**, go to [Our research approach](../../user-research/research#planning-and-conducting-research) to learn more about our research aims for this round.
 
-        <Details title={'What we learned from testing version 4'}>
-            * Nick to add content
+        <Details title={'What we learned from testing version 5'}>
+            * The new funding pot names still didn't work well, as participants found it confusing to have registered managers included in the 'non-registered professionals' funding
+            * The difference between the 'incomplete' and 'ready to submit' claim statuses was not clear, especially when claims automatically moved to 'ready to submit' when there might be additional learners to add
+            * Users thought the 'queried' tab was for claims they had queried, rather than claims queried by NHSBSA
+            * Many participants struggled to find the search filters
+            * They found it confusing that they could only filter within a status and there was no way to search for a claim across all statuses
+            * Feedback on the new claim screen was generally very positive, though a few users thought the use of 'incomplete' tags to indicate missing data was confusing as it made them think the claim had already been started
+            * The new claim definition (a single activity with potentially multiple learners) worked well for everyone
+            * The role groups when adding a new learner need further investigation as some participants felt they were not mutually exclusive
+            * Not everyone spotted the notes field when adding a claim and if they did they weren't sure what it was for
         </Details>
         
     </GridColumn>
@@ -180,8 +203,13 @@ description: The page description
 
         Version 6 was tested in **Submitters Round Four - Usability testing**, go to [Our research approach](../../user-research/research#planning-and-conducting-research) to learn more about our research aims for this round.
 
-        <Details title={'What we learned from testing version 5'}>
-            * Nick to add content
+        <Details title={'What we learned from testing version 6'}>
+            * Users preferred version A of the start page ('care skills' and 'revalidation' funding)
+            * We could improve the wording to clarify that booking training is outside the scope of the service
+            * Eligibility information is generally clear
+            * The help content when starting a new claim is much appreciated and some users may prefer the video or text content
+            * Similar help content around evidence requirements would also be useful
+            * The declaration text was clear, though users wanted a link to the grant award letter and also to potentially see more information about the types of checks that will be carried out
         </Details>
 
     </GridColumn>
@@ -201,12 +229,16 @@ description: The page description
 
 
         <Details title={'Specific features of version 7'}>
-            * Added the agreed funding pot names
-            * Introduced an initial version of a dashboard screen to route users to the different options available to them and provide a summary of claims within the service
-            * Made final iterations to the claim statuses (removing the 'ready to submit' status and introducing the 'approved' status)
-            * Improved the claim screen by making the design more consistent with the GDS 'check answers' pattern, making it easier to add evidence, simplifying the cost requirements and adding a payment date field
-            * Replaced the claim filters with a global search and added a new advanced search screen
-            * Added the start and manage claim screens for CPD claims
+            * Used the preferred funding pot names on the start page and throughout
+            * Added a new dashboard screen after sign in to indicate how we could show live data about an organisation's claims, and to present the 3 main user options (eligibility checker, manage care skills claims, manage revalidation claims)
+            * Replaced the filters on each tab with a cross-status search function
+            * Shortened the table headings (for example, changing 'claim reference number' to just 'claim reference')
+            * Changed the claim details page to bring it in line with the GDS check answers pattern and removed the incomplete tags
+            * Changed how learners were displayed to remove the summary card component
+            * Removed the 'cost per learner' field and added the 'payment date' field to indicate when the employer paid for the training
+            * Introduced the new 'maximum reimbursable amount per learner' element in the top right of the claim details screen (on approval this changes to show actual reimbursed amount)
+            * Added the claim history timeline component for submitted claims
+            * Added the manage and start claim screens for revalidation (CPD) funding
             * Started to consider the implications of split claims, where 60% of the reimbursement is provided upfront and 40% on completion
         </Details>
 
