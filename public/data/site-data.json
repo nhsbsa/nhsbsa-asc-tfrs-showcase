@@ -297,5 +297,14 @@
     "file": "public/content/user-research/users.mdx",
     "title": "Our users and their needs | ASC-TFRS Alpha Showcase",
     "description": "The home page description"
+  },
+  {
+    "slug": [
+      "wdf"
+    ],
+    "url": "/wdf",
+    "file": "public/content/wdf.mdx",
+    "title": "WDF as-is storyboard | ASC-TFRS Alpha Showcase",
+    "description": "The home page description"
   }
 ]
