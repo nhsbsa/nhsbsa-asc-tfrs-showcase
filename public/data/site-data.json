@@ -271,6 +271,16 @@
   {
     "slug": [
       "user-research",
+      "conducting-research"
+    ],
+    "url": "/user-research/conducting-research",
+    "file": "public/content/user-research/conducting-research.mdx",
+    "title": "Planning and conducting research | ASC-TFRS Alpha Showcase",
+    "description": "The home page description"
+  },
+  {
+    "slug": [
+      "user-research",
       "research"
     ],
     "url": "/user-research/research",
